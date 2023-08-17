@@ -1,7 +1,7 @@
 # AppMMT
 
-##Match Music Tinder
+## Match Music Tinder
 
-###Proyecto Integrador ISPC
+### Proyecto Integrador ISPC
 
 En este proyecto desarrollaremos la aplicacion MatchMusic para dispositivos moviles, con el lenguaje Java.
