@@ -4,7 +4,7 @@
 
 ### Proyecto Integrador ISPC de Aplicaciones Móviles, Ciberseguridad y Testeo de Software
 
-En este proyecto desarrollaremos la aplicacion MatchMusic para dispositivos moviles, con el lenguaje Java.
+En este proyecto desarrollaremos la aplicacion MatchMusic para dispositivos moviles, con el lenguaje JAVA.
 <<<<<<< HEAD
 
 INTEGRANTES DEL PROYECTO:
