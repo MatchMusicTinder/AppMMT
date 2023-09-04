@@ -1,5 +1,3 @@
-# AppMMT
-
 ## Match Music Tinder
 
 ### Proyecto Integrador ISPC de Aplicaciones Móviles, Ciberseguridad y Testeo de Software
@@ -17,3 +15,6 @@ INTEGRANTES DEL PROYECTO:
 7) PERALTA MARIA SOLEDAD,
 8) LEIVA RODRIGO,
 9) CASTELLANOS TORRES GERARDO ANTONIO
+
+Link del Documento IEEE830: https://docs.google.com/document/d/1_UBgOlm3_cWRb2YlYuPANA_lNpLyvGIEmnwf9sJJjAk/edit
+
