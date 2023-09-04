@@ -16,6 +16,4 @@ INTEGRANTES DEL PROYECTO:
 8) LEIVA RODRIGO,
 9) CASTELLANOS TORRES GERARDO ANTONIO
 
-Link del Documento IEEE830: https://docs.google.com/document/d/1_UBgOlm3_cWRb2YlYuPANA_lNpLyvGIEmnwf9sJJjAk/edit
-
 **Link de la Documentacion IEEE830**: https://docs.google.com/document/d/1_UBgOlm3_cWRb2YlYuPANA_lNpLyvGIEmnwf9sJJjAk/edit
