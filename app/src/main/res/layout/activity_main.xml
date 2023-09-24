@@ -89,6 +89,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:contextClickable="true"
+        android:onClick="launchRegisterActivity"
         android:text="¿No tienes  cuenta? Regístrate AQUÍ"
         android:textAlignment="center"
         android:textColor="#ffffff"

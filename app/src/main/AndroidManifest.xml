@@ -16,7 +16,7 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".registro_activity"
+            android:name=".RegistroActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
