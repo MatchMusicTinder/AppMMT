@@ -8,18 +8,18 @@ android:background="@drawable/degradado"
 tools:context=".RegistroSegundoPasoActivity">
 
     <TextView
-    android:id="@+id/textView9"
-    android:layout_width="339dp"
-    android:layout_height="26dp"
-    android:layout_marginTop="20dp"
-    android:text="Fecha de Nacimiento:"
-    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-    android:textColor="@color/white"
-    android:textSize="20dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.512"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
+        android:id="@+id/textView9"
+        android:layout_width="339dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Repetir Contraseña:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
 
 <EditText
     android:id="@+id/txtFechaNacimiento"
@@ -39,19 +39,19 @@ tools:context=".RegistroSegundoPasoActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/textView9" />
 
-<TextView
-    android:id="@+id/textView8"
-    android:layout_width="339dp"
-    android:layout_height="26dp"
-    android:layout_marginTop="20dp"
-    android:text="Apellido:"
-    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-    android:textColor="@color/white"
-    android:textSize="20dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.504"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="339dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Contraseña:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
 
 <EditText
     android:id="@+id/txtApellido"
@@ -119,17 +119,17 @@ tools:context=".RegistroSegundoPasoActivity">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="@+id/textView5" />
 
-<TextView
-    android:id="@+id/textView5"
-    android:layout_width="339dp"
-    android:layout_height="26dp"
-    android:layout_marginTop="152dp"
-    android:text="Nombre Completo:"
-    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-    android:textColor="@color/white"
-    android:textSize="20dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="339dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="152dp"
+        android:text="Usuario:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
