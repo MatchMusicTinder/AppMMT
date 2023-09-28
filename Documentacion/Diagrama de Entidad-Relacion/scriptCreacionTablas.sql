@@ -1,35 +1,50 @@
-
+CREATE DATABASE matchmusic;
+USE matchmusic;
         
-CREATE TABLE Comentarios
-(
+CREATE TABLE Comentarios(
   IdComentario           INT          NOT NULL,
   ContenidoDelComentario VARCHAR(200) NOT NULL,
   FechaDelComentario     DATETIME     NOT NULL,
   IdUsuario              INT          NOT NULL,
   IdPosteo               INT          NOT NULL,
-  PRIMARY KEY (IdComentario)
+  PRIMARY KEY (IdComentario),
+  CONSTRAINT idposteo
+    FOREIGN KEY (idPosteo)
+    REFERENCES matchmusic.posteo (idPosteo),
+  CONSTRAINT idusuario
+    FOREIGN KEY (idUsuario)
+    REFERENCES matchmusic.usuario (idUsuario)
 );
 
-CREATE TABLE Conexiones
-(
-  IdConexiones      INT      NOT NULL,
-  IdUsuarioSeguidor INT      NOT NULL,
-  IdUsuarioSeguido  INT      NOT NULL,
+CREATE TABLE Conexiones(
+  IdConexiones        INT    NOT NULL,
+  IdUsuario_que_sigue INT    NOT NULL,
+  IdUsuarioSeguido    INT      NOT NULL,
   FechaDeConexion   DATETIME NOT NULL,
-  PRIMARY KEY (IdConexiones)
+  PRIMARY KEY (IdConexiones),
+  CONSTRAINT idUsuarioSeguidor
+    FOREIGN KEY (IdUsuario_que_sigue)
+    REFERENCES matchmusic.usuario (idUsuario),
+  CONSTRAINT IdUsuarioSeguido
+    FOREIGN KEY (idUsuarioSeguido)
+    REFERENCES matchmusic.usuario (idUsuario) 
 );
 
-CREATE TABLE Favoritos
-(
+CREATE TABLE Favoritos(
   IdFavoritos          INT      NOT NULL,
   IdUsuario            INT      NOT NULL,
   IdPosteo             INT      NOT NULL,
   FechaMarcadoFavorito DATETIME NOT NULL,
-  PRIMARY KEY (IdFavoritos)
+  PRIMARY KEY (IdFavoritos),
+  CONSTRAINT idPosteo
+    FOREIGN KEY (idPosteo)
+    REFERENCES matchmusic.posteo (idPosteo),
+  CONSTRAINT idUsuario
+    FOREIGN KEY (idUsuario)
+    REFERENCES matchmusic.usuario (idUsuario)
 );
 
-CREATE TABLE Posteo
-(
+CREATE TABLE Posteo(
   IdPosteo               INT          NOT NULL,
   IdUsuario              INT          NOT NULL,
   TituloDelPosteo        VARCHAR(45)  NOT NULL,
@@ -38,67 +53,88 @@ CREATE TABLE Posteo
   GeneroMusicalDelPosteo VARCHAR(45)  NOT NULL,
   Ubicacion              VARCHAR(45)  NOT NULL,
   IdTipoDePosteo         INT          NOT NULL,
-  PRIMARY KEY (IdPosteo)
+  PRIMARY KEY (IdPosteo),
+  CONSTRAINT idUsuario
+    FOREIGN KEY (idUsuario)
+    REFERENCES matchmusic.usuario (idUsuario)
 );
 
-CREATE TABLE TipoDePosteo
-(
+CREATE TABLE TipoDePosteo(
   IdTipoDePosteo     INT          NOT NULL,
   NombreTipoDePosteo VARCHAR(100) NOT NULL,
-  PRIMARY KEY (IdTipoDePosteo)
+  PRIMARY KEY (IdTipoDePosteo),
+  CONSTRAINT NombreTipoDePosteo
+    FOREIGN KEY (idTipoDePosteo)
+    REFERENCES matchmusic.posteo (idPosteo)
 );
 
-CREATE TABLE Usuario
-(
+CREATE TABLE Usuario(
   IdUsuario             INT         NOT NULL,
   NombreDeUsuario       VARCHAR(45) NOT NULL,
   CorreoElectronico     VARCHAR(45) NOT NULL,
   Contraseña            VARCHAR(45) NOT NULL,
   FechaDeRegistro       DATETIME    NOT NULL,
   GeneroMusicalFavorito VARCHAR(45) NOT NULL,
-  PRIMARY KEY (IdUsuario)
+  Edad 					INT,
+  Ubicacion 			VARCHAR(45),
+  Posteos 				INT,
+  Banda 				VARCHAR(45),
+  Mensajes			 	INT,
+  Instrumentos 			VARCHAR(45),
+  PRIMARY KEY (IdUsuario),
+  CONSTRAINT banda
+    FOREIGN KEY (banda)
+    REFERENCES matchmusic.banda (idBanda),
+  CONSTRAINT instrumentos
+    FOREIGN KEY (instrumentos)
+    REFERENCES matchmusic.instrumento (idInstrumento),
+  CONSTRAINT mensajes
+    FOREIGN KEY (mensajes)
+    REFERENCES matchmusic.mensaje (idMensaje),
+  CONSTRAINT posteos
+    FOREIGN KEY (posteos)
+    REFERENCES matchmusic.posteo (idPosteo),
+  CONSTRAINT ubicacion
+    FOREIGN KEY (ubicacion)
+    REFERENCES matchmusic.ubicación (idUbicación)
 );
 
-ALTER TABLE Conexiones
-  ADD CONSTRAINT FK_Usuario_TO_Conexiones
-    FOREIGN KEY (IdUsuarioSeguidor)
-    REFERENCES Usuario (IdUsuario);
+CREATE TABLE Mensaje(
+	idMensaje INT NOT NULL,
+    Contenido VARCHAR(150),
+    Remitente INT,
+    Destinatario INT,
+    Fecha_envío DATETIME,
+	PRIMARY KEY (idMensaje)
+);
 
-ALTER TABLE Conexiones
-  ADD CONSTRAINT FK_Usuario_TO_Conexiones1
-    FOREIGN KEY (IdUsuarioSeguido)
-    REFERENCES Usuario (IdUsuario);
+CREATE TABLE Banda(
+	idBanda INT NOT NULL,
+    nombre VARCHAR (50) NOT NULL,
+    idGenero INT NOT NULL,
+    miembros VARCHAR (45) NOT NULL,
+    PRIMARY KEY (idBanda),
+    CONSTRAINT idGenero
+		FOREIGN KEY (idGenero)
+		REFERENCES matchmusic.genero_musical (idGenero)
+);
 
-ALTER TABLE Favoritos
-  ADD CONSTRAINT FK_Usuario_TO_Favoritos
-    FOREIGN KEY (IdUsuario)
-    REFERENCES Usuario (IdUsuario);
+CREATE TABLE Ubicación(
+	idUbicación INT NOT NULL,
+    nombre VARCHAR (100) NOT NULL,
+    dirección VARCHAR (100) NOT NULL,
+    PRIMARY KEY (idUbicación)
+);
 
-ALTER TABLE Posteo
-  ADD CONSTRAINT FK_Usuario_TO_Posteo
-    FOREIGN KEY (IdUsuario)
-    REFERENCES Usuario (IdUsuario);
+CREATE TABLE Instrumento(
+	idInstrumento INT NOT NULL,
+    nombre VARCHAR (50) NOT NULL,
+    tipo VARCHAR (50) NOT NULL,
+    PRIMARY KEY (idInstrumento)
+);
 
-ALTER TABLE Favoritos
-  ADD CONSTRAINT FK_Posteo_TO_Favoritos
-    FOREIGN KEY (IdPosteo)
-    REFERENCES Posteo (IdPosteo);
-
-ALTER TABLE Posteo
-  ADD CONSTRAINT FK_TipoDePosteo_TO_Posteo
-    FOREIGN KEY (IdTipoDePosteo)
-    REFERENCES TipoDePosteo (IdTipoDePosteo);
-
-ALTER TABLE Comentarios
-  ADD CONSTRAINT FK_Usuario_TO_Comentarios
-    FOREIGN KEY (IdUsuario)
-    REFERENCES Usuario (IdUsuario);
-
-ALTER TABLE Comentarios
-  ADD CONSTRAINT FK_Posteo_TO_Comentarios
-    FOREIGN KEY (IdPosteo)
-    REFERENCES Posteo (IdPosteo);
-
-
-        
-      
+CREATE TABLE Genero_Musical(
+	idGenero INT NOT NULL,
+    nombre VARCHAR(50),
+    PRIMARY KEY (idGenero)
+);
