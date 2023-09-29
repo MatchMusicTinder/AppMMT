@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MMT</string>
+    <string name="registro_exitoso">¡Registro Exitoso!</string>
+    <string name="match_music">Match Music</string>
 </resources>
