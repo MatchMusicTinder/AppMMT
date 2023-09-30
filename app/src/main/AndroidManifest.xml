@@ -7,11 +7,23 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Match Music"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MMT"
         tools:targetApi="31">
+        <activity
+            android:name=".RegistroExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroSegundoPasoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
