@@ -13,13 +13,13 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:background="@drawable/casa"
+        android:contentDescription="CASA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141"
-        android:contentDescription="CASA"/>
+        app:layout_constraintVertical_bias="0.141" />
 
     <TextView
         android:id="@+id/match_music"
@@ -47,12 +47,12 @@
         android:layout_marginTop="99dp"
         android:layout_marginEnd="296dp"
         android:background="@drawable/mensaje"
+        android:contentDescription="MENSAJE"
+        android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.708"
         app:layout_constraintStart_toEndOf="@+id/btn_casa"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="MENSAJE"
-        android:importantForAccessibility="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageButton
@@ -62,12 +62,12 @@
         android:layout_marginTop="98dp"
         android:layout_marginEnd="247dp"
         android:background="@drawable/mp3"
+        android:contentDescription="MP3"
+        android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="MP3"
-        android:importantForAccessibility="no"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_tienda"
@@ -146,7 +146,7 @@
 
     <VideoView
         android:id="@+id/vdo"
-        android:layout_width="370"
+        android:layout_width="0dp"
         android:layout_height="170dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
