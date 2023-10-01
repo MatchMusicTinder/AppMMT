@@ -1,11 +1,12 @@
-<resources>
-    <string name="app_name">MMT</string>
-    <string name="registro_exitoso">¡Registro Exitoso!</string>
-    <string name="match_music">Match Music</string>
-    <string name="mensajes">Mensajes</string>
-    <string name="mensaje">mensaje</string>
-    <string name="publicar">Publicar</string>
-    <string name="nomusuario">Nombre Usuario</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">MMT</string>
+    <string name="registro_exitoso" tools:ignore="MissingTranslation">¡Registro Exitoso!</string>
+    <string name="match_music" tools:ignore="MissingTranslation">Match Music</string>
+    <string name="mensajes" tools:ignore="MissingTranslation">Mensajes</string>
+    <string name="mensaje" tools:ignore="MissingTranslation">mensaje</string>
+    <string name="publicar" tools:ignore="MissingTranslation">Publicar</string>
+    <string name="nomusuario" tools:ignore="MissingTranslation">Nombre Usuario</string>
+    <string name="usuari" tools:ignore="MissingTranslation">Usuario</string>
 
 
 </resources>

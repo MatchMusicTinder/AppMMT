@@ -125,7 +125,7 @@
         android:layout_height="19dp"
         android:layout_marginTop="176dp"
         android:background="@drawable/usuario"
-        android:backgroundTint="#59C846"
+        android:tag="@string/usuari"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
@@ -146,7 +146,7 @@
 
     <VideoView
         android:id="@+id/vdo"
-        android:layout_width="370"
+        android:layout_width="match_parent"
         android:layout_height="170dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
