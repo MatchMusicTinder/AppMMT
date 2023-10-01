@@ -17,4 +17,8 @@ public class RegistroSegundoPasoActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RegistroExitoso.class);
         startActivity(intent);
     }
+    public void launchRegistroActivity(View view) {
+        Intent intent = new Intent(this, RegistroActivity.class);
+        startActivity(intent);
+    }
 }
