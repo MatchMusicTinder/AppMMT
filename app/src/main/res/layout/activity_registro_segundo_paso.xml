@@ -7,19 +7,24 @@ android:layout_height="match_parent"
 android:background="@drawable/degradado"
 tools:context=".RegistroSegundoPasoActivity">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="70dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="40dp"
-        android:clickable="true"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/boton"
         android:onClick="launchRegistroExitosoActivity"
-        android:src="@drawable/flecha_seguir"
+        android:text="Registrarse"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974" />
+        app:layout_constraintVertical_bias="0.754" />
 
     <TextView
         android:id="@+id/textView9"
@@ -147,5 +152,16 @@ tools:context=".RegistroSegundoPasoActivity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="68dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="592dp"
+        android:onClick="launchRegistroActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/flecha_volver_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

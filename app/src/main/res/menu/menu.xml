@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_profile1"
+        android:title="Mi Perfil"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_profile2"
+        android:title="Perfil Banda" />
+    <item
+        android:id="@+id/action_profile3"
+        android:title="Compartir" />
+    <item
+        android:id="@+id/action_profile4"
+        android:title="Ajustes" />
+</menu>

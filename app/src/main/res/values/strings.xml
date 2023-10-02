@@ -2,4 +2,10 @@
     <string name="app_name">MMT</string>
     <string name="registro_exitoso">¡Registro Exitoso!</string>
     <string name="match_music">Match Music</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="mensaje">mensaje</string>
+    <string name="publicar">Publicar</string>
+    <string name="nomusuario">Nombre Usuario</string>
+
+
 </resources>

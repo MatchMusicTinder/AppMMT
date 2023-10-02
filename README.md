@@ -17,3 +17,4 @@ INTEGRANTES DEL PROYECTO:
 9) CASTELLANOS TORRES GERARDO ANTONIO
 
 **Link de la Documentacion IEEE830**: https://docs.google.com/document/d/1_UBgOlm3_cWRb2YlYuPANA_lNpLyvGIEmnwf9sJJjAk/edit
+
