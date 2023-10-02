@@ -1,0 +1,266 @@
+[
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_degradado.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/degradado.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xhdpi_flecha_siguiente_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xhdpi/flecha_siguiente_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxxhdpi_flecha_siguiente_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxxhdpi/flecha_siguiente_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/menu_menu.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/menu/menu.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-mdpi_flecha_siguiente.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-mdpi/flecha_siguiente.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_mensaje.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/mensaje.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxxhdpi_flecha_siguiente.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxxhdpi/flecha_siguiente.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_promocion.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/promocion.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_cryptocurrency_music__1_.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/cryptocurrency_music__1_.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_edittext_rounded_border.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/edittext_rounded_border.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-anydpi-v26_flecha_siguiente_round.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-anydpi-v26/flecha_siguiente_round.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/layout_activity_principal.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/layout/activity_principal.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/layout_activity_main.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xhdpi_flecha_siguiente_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xhdpi/flecha_siguiente_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxhdpi_flecha_siguiente.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxhdpi/flecha_siguiente.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_cryptocurrency_music.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/cryptocurrency_music.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_vector.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/vector.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-anydpi-v26_flecha_siguiente.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-anydpi-v26/flecha_siguiente.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxhdpi_flecha_siguiente_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxhdpi/flecha_siguiente_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-hdpi_flecha_siguiente.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-hdpi/flecha_siguiente.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_casa.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/casa.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_flecha_seguir.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/flecha_seguir.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxhdpi_flecha_siguiente_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxhdpi/flecha_siguiente_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_fondommt.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/fondommt.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_flecha_atras.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/flecha_atras.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_usuario.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/usuario.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xhdpi_flecha_siguiente.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xhdpi/flecha_siguiente.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-mdpi_flecha_siguiente_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-mdpi/flecha_siguiente_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_mmt.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/mmt.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/layout_activity_registro_segundo_paso.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/layout/activity_registro_segundo_paso.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-hdpi_flecha_siguiente_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-hdpi/flecha_siguiente_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-mdpi_flecha_siguiente_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-mdpi/flecha_siguiente_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/layout_activity_login.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_flecha_siguiente_background.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/flecha_siguiente_background.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/raw_pantera.mp4.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/raw/pantera.mp4"
+    },
+    {
+        "merged": "com.example.mmt.app-merged_res-30:/layout_activity_principal.xml.flat",
+        "source": "com.example.mmt.app-main-32:/layout/activity_principal.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxxhdpi_flecha_siguiente_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxxhdpi/flecha_siguiente_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_logo_mm.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/logo_mm.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_tienda.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/tienda.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/layout_activity_registro.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/layout/activity_registro.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_mp3.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/mp3.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable-mm_logo.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable-mm/logo.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/drawable_fondomm.png.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/drawable/fondomm.png"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/mipmap-hdpi_flecha_siguiente_foreground.webp.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/mipmap-hdpi/flecha_siguiente_foreground.webp"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/layout_activity_registro_exitoso.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/layout/activity_registro_exitoso.xml"
+    },
+    {
+        "merged": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-merged_res-30:/xml_backup_rules.xml.flat",
+        "source": "/home/deo/.gradle/daemon/8.0/com.example.mmt.app-main-32:/xml/backup_rules.xml"
+    }
+]

@@ -1,0 +1,159 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mmt"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+9        android:targetSdkVersion="33" />
+10
+11    <queries>
+11-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:23:5-34:15
+12
+13        <!-- Required for querying the IME service at runtime -->
+14        <intent>
+14-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:26:9-28:18
+15            <action android:name="android.view.InputMethod" />
+15-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:27:13-63
+15-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:27:21-60
+16        </intent>
+17        <!-- Required for querying the plugin at runtime -->
+18        <provider
+18-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:30:9-33:67
+19            android:name="com.android.car.ui.plugin.PluginNameProvider"
+19-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:31:13-72
+20            android:authorities="com.android.car.ui.plugin" />
+20-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:32:13-60
+21    </queries>
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] /home/deo/.gradle/caches/transforms-3/543740e42155bb89dcbd6bdda0f43b68/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+24        android:name="com.example.mmt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] /home/deo/.gradle/caches/transforms-3/543740e42155bb89dcbd6bdda0f43b68/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] /home/deo/.gradle/caches/transforms-3/543740e42155bb89dcbd6bdda0f43b68/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.example.mmt.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] /home/deo/.gradle/caches/transforms-3/543740e42155bb89dcbd6bdda0f43b68/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] /home/deo/.gradle/caches/transforms-3/543740e42155bb89dcbd6bdda0f43b68/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:5:5-39:19
+30        android:allowBackup="true"
+30-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:6:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.9.0] /home/deo/.gradle/caches/transforms-3/543740e42155bb89dcbd6bdda0f43b68/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+32        android:dataExtractionRules="@xml/data_extraction_rules"
+32-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:7:9-65
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:fullBackupContent="@xml/backup_rules"
+35-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:8:9-54
+36        android:icon="@mipmap/ic_launcher"
+36-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:9:9-43
+37        android:label="Match Music"
+37-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:10:9-36
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:11:9-54
+39        android:supportsRtl="true"
+39-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:12:9-35
+40        android:testOnly="true"
+41        android:theme="@style/Theme.MMT" >
+41-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:13:9-41
+42        <activity
+42-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:15:9-17:40
+43            android:name="com.example.mmt.PrincipalActivity"
+43-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:16:13-46
+44            android:exported="false" />
+44-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:17:13-37
+45        <activity
+45-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:18:9-20:40
+46            android:name="com.example.mmt.RegistroExitoso"
+46-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:19:13-44
+47            android:exported="false" />
+47-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:20:13-37
+48        <activity
+48-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:21:9-23:40
+49            android:name="com.example.mmt.RegistroSegundoPasoActivity"
+49-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:22:13-56
+50            android:exported="false" />
+50-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:23:13-37
+51        <activity
+51-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:24:9-26:40
+52            android:name="com.example.mmt.LoginActivity"
+52-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:25:13-42
+53            android:exported="false" />
+53-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:26:13-37
+54        <activity
+54-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:27:9-29:40
+55            android:name="com.example.mmt.RegistroActivity"
+55-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:28:13-45
+56            android:exported="false" />
+56-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:29:13-37
+57        <activity
+57-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:30:9-38:20
+58            android:name="com.example.mmt.MainActivity"
+58-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:31:13-41
+59            android:exported="true" >
+59-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:32:13-36
+60            <intent-filter>
+60-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:33:13-37:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:34:17-69
+61-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:34:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:36:17-77
+63-->/home/deo/AndroidStudioProjects/AppMMT/app/src/main/AndroidManifest.xml:36:27-74
+64            </intent-filter>
+65        </activity>
+66
+67        <provider
+67-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:37:9-42:71
+68            android:name="com.android.car.ui.core.CarUiInstaller"
+68-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:38:13-66
+69            android:authorities="com.example.mmt.CarUiInstaller"
+69-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:39:13-66
+70            android:directBootAware="true"
+70-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:40:13-43
+71            android:exported="false"
+71-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:41:13-37
+72            android:process="@string/car_ui_installer_process_name" />
+72-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:42:13-68
+73        <provider
+73-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:43:9-48:79
+74            android:name="com.android.car.ui.core.SearchResultsProvider"
+74-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:44:13-73
+75            android:authorities="com.example.mmt.SearchResultsProvider"
+75-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:45:13-73
+76            android:exported="true"
+76-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:46:13-36
+77            android:process="@string/car_ui_installer_process_name"
+77-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:47:13-68
+78            android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS" />
+78-->[com.android.car.ui:car-ui-lib:2.5.1] /home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/AndroidManifest.xml:48:13-76
+79        <provider
+79-->[androidx.emoji2:emoji2:1.2.0] /home/deo/.gradle/caches/transforms-3/34e9d2ecb03fed35e86c5ba34096e160/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+80            android:name="androidx.startup.InitializationProvider"
+80-->[androidx.emoji2:emoji2:1.2.0] /home/deo/.gradle/caches/transforms-3/34e9d2ecb03fed35e86c5ba34096e160/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+81            android:authorities="com.example.mmt.androidx-startup"
+81-->[androidx.emoji2:emoji2:1.2.0] /home/deo/.gradle/caches/transforms-3/34e9d2ecb03fed35e86c5ba34096e160/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+82            android:exported="false" >
+82-->[androidx.emoji2:emoji2:1.2.0] /home/deo/.gradle/caches/transforms-3/34e9d2ecb03fed35e86c5ba34096e160/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+83            <meta-data
+83-->[androidx.emoji2:emoji2:1.2.0] /home/deo/.gradle/caches/transforms-3/34e9d2ecb03fed35e86c5ba34096e160/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+84                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+84-->[androidx.emoji2:emoji2:1.2.0] /home/deo/.gradle/caches/transforms-3/34e9d2ecb03fed35e86c5ba34096e160/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+85                android:value="androidx.startup" />
+85-->[androidx.emoji2:emoji2:1.2.0] /home/deo/.gradle/caches/transforms-3/34e9d2ecb03fed35e86c5ba34096e160/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+86            <meta-data
+86-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/deo/.gradle/caches/transforms-3/53293a914aef093f90527b36dd5c2e86/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+87                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+87-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/deo/.gradle/caches/transforms-3/53293a914aef093f90527b36dd5c2e86/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+88                android:value="androidx.startup" />
+88-->[androidx.lifecycle:lifecycle-process:2.4.1] /home/deo/.gradle/caches/transforms-3/53293a914aef093f90527b36dd5c2e86/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+89        </provider>
+90    </application>
+91
+92</manifest>
