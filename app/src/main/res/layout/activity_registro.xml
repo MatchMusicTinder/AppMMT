@@ -203,6 +203,7 @@
         android:layout_marginTop="31dp"
         android:layout_marginEnd="28dp"
         android:clickable="true"
+        android:foreground="@mipmap/flecha_siguiente_foreground"
         android:onClick="launchRegistroSegundoPasoActivity"
         android:src="@drawable/flecha_seguir"
         app:layout_constraintBottom_toBottomOf="parent"
