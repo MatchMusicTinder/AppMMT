@@ -146,11 +146,7 @@
 
     <VideoView
         android:id="@+id/vdo"
-<<<<<<< HEAD
-        android:layout_width="match_parent"
-=======
         android:layout_width="0dp"
->>>>>>> dbf939578847a888db00180b93e38def78c33afd
         android:layout_height="170dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

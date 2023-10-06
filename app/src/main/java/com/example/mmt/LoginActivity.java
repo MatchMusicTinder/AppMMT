@@ -17,16 +17,16 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-<<<<<<< HEAD
+
         btnIngresar = findViewById(R.id.btningresar);
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
-                startActivity(intent);
+        public void onClick(View view) {
+            Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
+            startActivity(intent);
             }
         });
-=======
+
 //        btnIngresar = findViewById(R.id.ingresar);
 //        btnIngresar.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -37,9 +37,9 @@ public class LoginActivity extends AppCompatActivity {
 //        });
     }
 
-    public void ingresarAlMuro(View view) {
-        Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
-        startActivity(intent);
->>>>>>> dbf939578847a888db00180b93e38def78c33afd
-    }
+        public void ingresarAlMuro(View view) {
+            Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
+            startActivity(intent);
+
+        }
 }

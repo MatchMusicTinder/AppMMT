@@ -26,23 +26,25 @@ public class PrincipalActivity extends AppCompatActivity {
 //        buscar = findViewById(R.id.buscar);
 //        buscar.setOnQueryTextListener(this);
 //
-//        int orientacion=getResources().getConfiguration().orientation;
-//        if (orientacion == Configuration.ORIENTATION_LANDSCAPE){
-//            getSupportActionBar().hide();
-//        }else
-//            getSupportActionBar().show();
-//
-//        vdo = findViewById(R.id.vdo);
-//
-//        vdo.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pantera));
-//
-//        MediaController mdactrlr = new MediaController(this);
-//        vdo.setMediaController(mdactrlr);
-//        mdactrlr.setAnchorView(vdo);
-//
-//
-//        vdo.start();
-//    }
+        VideoView vdo;
+        int orientacion=getResources().getConfiguration().orientation;
+        if (orientacion == Configuration.ORIENTATION_LANDSCAPE){
+            getSupportActionBar().hide();
+        }else
+            getSupportActionBar().show();
+
+        vdo = findViewById(R.id.vdo);
+
+        vdo.setVideoURI(Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.pantera));
+
+        MediaController mdactrlr = new MediaController(this);
+        vdo.setMediaController(mdactrlr);
+        mdactrlr.setAnchorView(vdo);
+
+
+        vdo.start();
+    }
+}
 //    @Override
 //    public boolean onQueryTextSubmit(String query) {
 //        return false;
@@ -50,7 +52,7 @@ public class PrincipalActivity extends AppCompatActivity {
 //    @Override
 //    public boolean onQueryTextChange(String newText) {
 //        return false;
-//    }
+//   }
 //     @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.menu,menu);
@@ -73,5 +75,4 @@ public class PrincipalActivity extends AppCompatActivity {
 //                break;
 //        }
 //        return super.onOptionsItemSelected(item);
-    }
-}
+//    }
