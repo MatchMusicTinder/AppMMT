@@ -10,16 +10,20 @@
 
     <ImageButton
         android:id="@+id/btn_casa"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="355dp"
+        android:layout_marginBottom="521dp"
         android:background="@drawable/casa"
         android:contentDescription="CASA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/match_music"
@@ -42,8 +46,8 @@
 
     <ImageButton
         android:id="@+id/btn_mensajes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="99dp"
         android:layout_marginEnd="296dp"
         android:background="@drawable/mensaje"
@@ -57,33 +61,33 @@
 
     <ImageButton
         android:id="@+id/mp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="98dp"
-        android:layout_marginEnd="247dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="200dp"
         android:background="@drawable/mp3"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btn_tienda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/tienda"
         android:contentDescription="tienda"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@+id/mp3"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="NotSibling" />
 
-    <SearchView
+    <ImageView
         android:id="@+id/buscar"
         android:layout_width="250dp"
         android:layout_height="20dp"
@@ -95,13 +99,13 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="95dp"
-        android:layout_height="30dp"
+        android:layout_width="110dp"
+        android:layout_height="48dp"
         android:layout_marginTop="132dp"
         android:backgroundTint="@color/material_dynamic_neutral40"
         android:text="@string/publicar"
         android:textColor="#010400"
-        android:textSize="10sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.879"
@@ -109,20 +113,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/promocion" />
-
-    <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="23dp"
-        android:layout_height="19dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="176dp"
         android:background="@drawable/usuario"
         android:backgroundTint="#59C846"
@@ -153,6 +146,6 @@
         app:layout_constraintDimensionRatio="4:3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
