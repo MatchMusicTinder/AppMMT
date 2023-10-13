@@ -133,8 +133,8 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_marginTop="176dp"
         android:text="@string/nomusuario"
         android:textColor="@color/white"
@@ -145,11 +145,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <VideoView
-        android:id="@+id/vdo"
+        android:id="@+id/videoview"
         android:layout_width="0dp"
-        android:layout_height="170dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="4:3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
