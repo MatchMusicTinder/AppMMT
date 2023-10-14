@@ -8,7 +8,7 @@
     tools:context=".RegistroActivity">
 
     <EditText
-        android:id="@+id/txtTelefono"
+        android:id="@+id/txtUbicacion"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="339dp"
         android:layout_height="48dp"
@@ -30,17 +30,17 @@
         android:layout_width="339dp"
         android:layout_height="26dp"
         android:layout_marginTop="20dp"
-        android:text="Teléfono:"
+        android:text="Ubicación:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtGeneroMus" />
 
     <EditText
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtGeneroMus"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="339dp"
         android:layout_height="48dp"
@@ -62,31 +62,31 @@
         android:layout_width="339dp"
         android:layout_height="26dp"
         android:layout_marginTop="20dp"
-        android:text="E-mail:"
+        android:text="Genero Musical:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtFechaNacimiento" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="339dp"
         android:layout_height="26dp"
         android:layout_marginTop="20dp"
-        android:text="Fecha de Nacimiento:"
+        android:text="Email:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
+        app:layout_constraintTop_toBottomOf="@+id/contraseña" />
 
     <EditText
-        android:id="@+id/txtFechaNacimiento"
+        android:id="@+id/txtEmail"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="339dp"
         android:layout_height="48dp"
@@ -108,17 +108,17 @@
         android:layout_width="339dp"
         android:layout_height="26dp"
         android:layout_marginTop="20dp"
-        android:text="Apellido:"
+        android:text="Fecha Nacimiento:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
 
     <EditText
-        android:id="@+id/txtApellido"
+        android:id="@+id/contraseña"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="339dp"
         android:layout_height="48dp"
@@ -164,7 +164,7 @@
         app:srcCompat="@drawable/logo_mm" />
 
     <EditText
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtUsuario"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="339dp"
         android:layout_height="48dp"
@@ -200,7 +200,8 @@
         android:id="@+id/imageView4"
         android:layout_width="70dp"
         android:layout_height="71dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginStart="313dp"
+        android:layout_marginTop="645dp"
         android:layout_marginEnd="28dp"
         android:clickable="true"
         android:foreground="@mipmap/flecha_siguiente_foreground"
@@ -208,6 +209,7 @@
         android:src="@drawable/flecha_seguir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
 
