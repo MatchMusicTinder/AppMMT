@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/contrasena" />
 
     <EditText
         android:id="@+id/txtEmail"
@@ -115,10 +115,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
 
     <EditText
-        android:id="@+id/contraseña"
+        android:id="@+id/contrasena"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="339dp"
         android:layout_height="48dp"
@@ -164,7 +164,7 @@
         app:srcCompat="@drawable/logo_mm" />
 
     <EditText
-        android:id="@+id/txtUsuario"
+        android:id="@+id/correo"
         style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
         android:layout_width="339dp"
         android:layout_height="48dp"
