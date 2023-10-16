@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class RegistroSegundoPasoActivity extends AppCompatActivity {
     Button btn_register;
-    EditText name, email, password;
+    EditText name, email, password,fecha_nac,genero_mus,ubic,instru;
     FirebaseFirestore mFirestore;
     FirebaseAuth mAuth;
 
@@ -37,6 +37,10 @@ public class RegistroSegundoPasoActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         name = findViewById(R.id.nombre);
+        fecha_nac = findViewById(R.id.fechanac);
+        genero_mus = findViewById(R.id.generomus);
+        ubic = findViewById(R.id.ubicacion);
+        instru = findViewById(R.id.instrumentos);
         email = findViewById(R.id.correo);
         password = findViewById(R.id.contrasena);
         btn_register = findViewById(R.id.btn_registro);
@@ -45,19 +49,23 @@ public class RegistroSegundoPasoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String nameUser = name.getText().toString().trim();
+                String nacUser = fecha_nac.getText().toString().trim();
+                String generoUser = genero_mus.getText().toString().trim();
+                String ubicUser = ubic.getText().toString().trim();
+                String instruUser = instru.getText().toString().trim();
                 String emailUser = email.getText().toString().trim();
                 String passUser = password.getText().toString().trim();
 
-                if (nameUser.isEmpty() && emailUser.isEmpty() && passUser.isEmpty()){
+                if (nameUser.isEmpty() && nacUser.isEmpty() && generoUser.isEmpty() && ubicUser.isEmpty() && instruUser.isEmpty() && emailUser.isEmpty() && passUser.isEmpty()){
                     Toast.makeText(RegistroSegundoPasoActivity.this, "Complete los datos", Toast.LENGTH_SHORT).show();
                 }else{
-                    registerUser(nameUser, emailUser, passUser);
+                    registerUser(nameUser,nacUser,generoUser,ubicUser,instruUser, emailUser, passUser);
                 }
             }
         });
 
     }
-    private void registerUser(String nameUser, String emailUser, String passUser) {
+    private void registerUser(String nameUser,String nacUser,String generoUser,String ubicUser,String instruUser, String emailUser, String passUser) {
         mAuth.createUserWithEmailAndPassword(emailUser, passUser).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -65,6 +73,10 @@ public class RegistroSegundoPasoActivity extends AppCompatActivity {
                 Map<String, Object> map = new HashMap<>();
                 map.put("id", id);
                 map.put("name", nameUser);
+                map.put("fecha_nac", nacUser);
+                map.put("genero_mus", generoUser);
+                map.put("ubic", ubicUser);
+                map.put("instru", instruUser);
                 map.put("email", emailUser);
                 map.put("password", passUser);
 
