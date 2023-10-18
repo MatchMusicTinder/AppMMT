@@ -10,36 +10,29 @@ import android.widget.Button;
 
 public class LoginActivity extends AppCompatActivity {
 
-//    Button btnIngresar;
-//    @SuppressLint("WrongViewCast")
+//  Button ingresarAlMuro;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-
-//        btnIngresar = findViewById(R.id.btningresar);
-//        btnIngresar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//        public void onClick(View view) {
-//            Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
-//            startActivity(intent);
-//            }
-//        });
-
-//        btnIngresar = findViewById(R.id.ingresar);
-//        btnIngresar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+/*      ingresarAlMuro = findViewById(R.id.ingresarAlMuro);
+        ingresarAlMuro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
+                startActivity(intent);
+            }
+      });*/
+    }
+    /*public void launchLoginActivity(View view) {
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }*/
+    public void launchPrincipalActivity (View view) {
+        Intent intent = new Intent(this, PrincipalActivity.class);
+        startActivity(intent);
     }
 
-        public void ingresarAlMuro(View view) {
-            Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
-            startActivity(intent);
 
-        }
 }

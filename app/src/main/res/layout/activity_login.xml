@@ -82,7 +82,7 @@
         app:layout_constraintVertical_bias="0.643" />
 
     <Button
-        android:id="@+id/btningresar"
+        android:id="@+id/ingresarAlMuro"
         android:layout_width="309dp"
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
