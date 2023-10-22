@@ -136,6 +136,7 @@
         android:layout_height="43dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="148dp"
+        android:hint="Buscar"
         android:background="#FFFFFF"
         android:ems="10"
         android:inputType="text"
@@ -171,6 +172,19 @@
         android:background="@drawable/usuario"
         android:backgroundTint="#59C846"
         app:layout_constraintStart_toStartOf="@+id/svPublicacion"
+        app:layout_constraintTop_toTopOf="@+id/svPublicacion" />
+
+    <TextView
+        android:id="@+id/datosPublicante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Juan Carlos 1/03/2023"
+        android:textColor="#FBF9F9"
+        android:textColorHighlight="#F8F5F5"
+        android:textColorLink="#FBFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/svVideoYComentario"
+        app:layout_constraintStart_toEndOf="@id/ibPerfilPublicante"
         app:layout_constraintTop_toTopOf="@+id/svPublicacion" />
 
     <ScrollView
@@ -256,12 +270,12 @@
 
     <ImageButton
         android:id="@+id/ibReproducirVideo"
-        android:layout_width="155dp"
-        android:layout_height="137dp"
+        android:layout_width="141dp"
+        android:layout_height="126dp"
         android:layout_margin="8dp"
         android:onClick="lauchReproducirvideo"
-        app:srcCompat="@drawable/reproducirvideo"
+        app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"
         app:layout_constraintStart_toStartOf="@+id/svVideoYComentario"
         app:layout_constraintTop_toTopOf="@+id/svVideoYComentario"
-        app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"/>
+        app:srcCompat="@drawable/reproducirvideo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
