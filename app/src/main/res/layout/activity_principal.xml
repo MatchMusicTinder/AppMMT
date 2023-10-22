@@ -191,17 +191,6 @@
     </ScrollView>
 
 
-    <VideoView
-        android:id="@+id/videoview"
-        android:layout_width="155dp"
-        android:layout_height="137dp"
-        android:layout_margin="8dp"
-        app:layout_constraintDimensionRatio="4:3"
-        app:layout_constraintStart_toStartOf="@+id/svVideoYComentario"
-        app:layout_constraintTop_toTopOf="@+id/svVideoYComentario"
-        app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"
-        />
-
     <TextView
         android:id="@+id/tvDescripcionVideo"
         android:layout_width="144dp"
@@ -210,7 +199,7 @@
         android:background="#FBF6F6"
         android:text=" asdf asd as fads fas df fw fe we fwe 23 r fsa df a f 24 w rsd fs dfs df sdf sdf "
         app:layout_constraintEnd_toEndOf="@+id/svVideoYComentario"
-        app:layout_constraintStart_toEndOf="@+id/videoview"
+        app:layout_constraintStart_toEndOf="@+id/ibReproducirVideo"
         app:layout_constraintTop_toTopOf="@+id/svVideoYComentario"
         app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"
         />
@@ -264,4 +253,15 @@
         app:layout_constraintBottom_toTopOf="@+id/svVideoYComentario"
         app:layout_constraintEnd_toStartOf="@+id/textView8"
         app:layout_constraintTop_toTopOf="@+id/svPublicacion" />
+
+    <ImageButton
+        android:id="@+id/ibReproducirVideo"
+        android:layout_width="155dp"
+        android:layout_height="137dp"
+        android:layout_margin="8dp"
+        android:onClick="lauchReproducirvideo"
+        app:srcCompat="@drawable/reproducirvideo"
+        app:layout_constraintStart_toStartOf="@+id/svVideoYComentario"
+        app:layout_constraintTop_toTopOf="@+id/svVideoYComentario"
+        app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
