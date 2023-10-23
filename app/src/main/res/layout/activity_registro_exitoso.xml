@@ -21,7 +21,8 @@
         app:layout_constraintVertical_bias="0.078"
         app:srcCompat="@drawable/logo_mm"
         android:layout_gravity="center"
-        tools:ignore="UnknownId,UnknownIdInLayout" />
+        tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView2"
@@ -43,6 +44,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/registro_exitoso"
         android:textAlignment="center"
         android:textColor="#ffffff"
@@ -53,8 +55,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_gravity="center"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintVertical_bias="0.273"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -70,18 +72,20 @@
         <TextView
             android:layout_width="239dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
-            android:text="Nombre Completo:"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            android:text="@string/nombre_completo"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
 
         <TextView
             android:id="@+id/nombreCompleto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22dp" />
+            android:textSize="22sp"
+            tools:ignore="VisualLintBounds" />
     </LinearLayout>
 
 
@@ -100,17 +104,19 @@
         <TextView
             android:layout_width="252dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:text="Fecha Nacimiento:"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            android:layout_marginStart="30dp"
+            android:text="@string/fecha_nacimiento"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
 
         <TextView
             android:id="@+id/fechaNac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22dp" />
+            android:textSize="22sp"
+            tools:ignore="VisualLintBounds" />
     </LinearLayout>
 
     <LinearLayout
@@ -127,17 +133,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email:"
-            android:textSize="22dp"
             android:layout_marginLeft="30dp"
-            android:textStyle="bold" />
+            android:text="Email:"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck" />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22dp" />
+            android:textSize="22sp" />
     </LinearLayout>
 
 
@@ -157,16 +164,18 @@
             android:layout_width="261dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"
-            android:text="Genero musical:"
-            android:textSize="22dp"
-            android:textStyle="bold" />
+            android:text="@string/genero_musical"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,TextSizeCheck,VisualLintBounds" />
 
         <TextView
             android:id="@+id/generomusical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22dp" />
+            android:textSize="22sp"
+            tools:ignore="VisualLintBounds" />
     </LinearLayout>
 
 
@@ -185,17 +194,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ubicación:"
-            android:textSize="22dp"
             android:layout_marginLeft="30dp"
-            android:textStyle="bold" />
+            android:text="@string/ubicaci_n"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,TextSizeCheck" />
 
         <TextView
             android:id="@+id/ubicacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22dp" />
+            android:textSize="22sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -212,17 +222,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Instrumentos:"
-            android:textSize="22dp"
             android:layout_marginLeft="30dp"
-            android:textStyle="bold" />
+            android:text="@string/instrumentos"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,TextSizeCheck" />
 
         <TextView
             android:id="@+id/nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textSize="22dp" />
+            android:textSize="22sp" />
     </LinearLayout>
 
     <Button
@@ -243,6 +254,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_gravity="center"
-        app:layout_constraintVertical_bias="0.898" />
+        app:layout_constraintVertical_bias="0.898"
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>

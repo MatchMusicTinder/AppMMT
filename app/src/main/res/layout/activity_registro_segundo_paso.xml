@@ -15,9 +15,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints=""
         android:background="@drawable/edittext_rounded_border"
         android:ems="10"
-        android:hint="Fecha de Nacimiento"
+        android:hint="@string/fecha_de_nacimiento"
         android:inputType="text"
         android:paddingTop="6dp"
         android:selectAllOnFocus="true"
@@ -27,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.31"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/generomus"
@@ -39,7 +41,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/edittext_rounded_border"
         android:ems="10"
-        android:hint="Genero Musical Favorito"
+        android:hint="@string/genero_musical_favorito"
         android:inputType="text"
         android:paddingTop="6dp"
         android:selectAllOnFocus="true"
@@ -49,7 +51,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="TextContrastCheck"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/ubicacion"
@@ -71,7 +75,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.487" />
+        app:layout_constraintVertical_bias="0.487"
+        tools:ignore="HardcodedText,TextContrastCheck"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/instrumentos"
@@ -93,7 +99,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.574" />
+        app:layout_constraintVertical_bias="0.574"
+        tools:ignore="HardcodedText,TextContrastCheck"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btn_registro"
@@ -104,7 +112,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/boton"
         android:onClick="launchRegistroExitosoActivity"
-        android:text="Registrarse"
+        android:text="@string/registrarse"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -122,6 +130,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints=""
         android:background="@drawable/edittext_rounded_border"
         android:ems="10"
         android:hint="contraseña"
@@ -134,7 +143,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
+        app:layout_constraintVertical_bias="0.757"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <TextView
         android:id="@+id/textView3"
@@ -147,14 +157,15 @@
         android:text="¡Match Music!"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.121"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -169,7 +180,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo_mm" />
+        app:srcCompat="@drawable/logo_mm"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck"
+        android:contentDescription="TODO" />
 
     <EditText
         android:id="@+id/correo"
@@ -179,6 +192,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:autofillHints=""
         android:background="@drawable/edittext_rounded_border"
         android:ems="10"
         android:hint="Email"
@@ -191,7 +205,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67" />
+        app:layout_constraintVertical_bias="0.67"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <EditText
         android:id="@+id/nombre"
@@ -203,7 +218,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/edittext_rounded_border"
         android:ems="10"
-        android:hint="nombre"
+        android:hint="@string/nombre"
         android:inputType="text"
         android:paddingTop="6dp"
         android:selectAllOnFocus="true"
@@ -213,6 +228,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.223" />
+        app:layout_constraintVertical_bias="0.223"
+        tools:ignore="TextContrastCheck"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

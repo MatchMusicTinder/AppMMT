@@ -14,10 +14,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="¡Bienvenidos!"
+        android:text="@string/bienvenidos"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,15 +32,16 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+        android:text="@string/quot_lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat_duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#190D0D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintVertical_bias="0.224"
+        tools:ignore="VisualLintLongText,VisualLintBounds" />
 
     <TextView
         android:id="@+id/textView2"
@@ -51,15 +52,16 @@
         android:layout_marginEnd="16dp"
         android:text="Match Music"
         android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#689F38"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.398"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <Button
         android:id="@+id/button"
@@ -70,15 +72,15 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/boton"
         android:onClick="launchLoginActivity"
-        android:text="Iniciar Sesion"
+        android:text="@string/iniciar_sesion"
         android:textColor="#000000"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.758"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -89,17 +91,19 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:contextClickable="true"
+        android:minHeight="48dp"
         android:onClick="launchRegisterActivity"
-        android:text="¿No tienes  cuenta? Regístrate AQUÍ"
+        android:text="@string/no_tienes_cuenta_reg_strate_aqu"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.900" />
+        app:layout_constraintVertical_bias="0.900"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -114,6 +118,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.583"
-        app:srcCompat="@drawable/logo_mm" />
+        app:srcCompat="@drawable/logo_mm"
+        android:contentDescription="@string/todo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

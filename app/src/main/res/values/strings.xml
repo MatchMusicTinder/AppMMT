@@ -7,6 +7,28 @@
     <string name="publicar" tools:ignore="MissingTranslation">Publicar</string>
     <string name="nomusuario" tools:ignore="MissingTranslation">Nombre Usuario</string>
     <string name="usuari" tools:ignore="MissingTranslation">Usuario</string>
+    <string name="iniciar_sesion" translatable="false">Iniciar Sesion</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="quot_lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat_duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur" translatable="false">\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</string>
+    <string name="bienvenidos" translatable="false">¡Bienvenidos!</string>
+    <string name="no_tienes_cuenta_reg_strate_aqu" translatable="false">¿No tienes cuenta? Regístrate AQUÍ</string>
+    <string name="ingresar" translatable="false">Ingresar</string>
+    <string name="registrar_usuario" translatable="false">Registrar Usuario</string>
+    <string name="contrase_a" translatable="false">contraseña</string>
+    <string name="email" translatable="false">email</string>
+    <string name="bienvenidos_as" translatable="false">¡Bienvenidos/as!</string>
+    <string name="casa" translatable="false">CASA</string>
+    <string name="cerrar_sesi_n" translatable="false">cerrar sesión</string>
+    <string name="tienda" translatable="false">tienda</string>
+    <string name="nombre_completo" translatable="false">Nombre Completo:</string>
+    <string name="fecha_nacimiento" translatable="false">Fecha Nacimiento:</string>
+    <string name="genero_musical" translatable="false">Genero musical:</string>
+    <string name="ubicaci_n" translatable="false">Ubicación:</string>
+    <string name="instrumentos" translatable="false">Instrumentos:</string>
+    <string name="registrarse" translatable="false">Registrarse</string>
+    <string name="fecha_de_nacimiento" translatable="false">Fecha de Nacimiento</string>
+    <string name="genero_musical_favorito" translatable="false">Genero Musical Favorito</string>
+    <string name="nombre" translatable="false">nombre</string>
 
 
 </resources>

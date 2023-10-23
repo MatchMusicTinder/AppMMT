@@ -10,26 +10,27 @@
 
     <ImageButton
         android:id="@+id/btn_casa"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="99dp"
+        android:layout_marginTop="97dp"
         android:layout_marginEnd="355dp"
         android:layout_marginBottom="521dp"
         android:background="@drawable/casa"
-        android:contentDescription="CASA"
+        android:contentDescription="@string/casa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/match_music"
         android:layout_width="200dp"
         android:layout_height="42dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:gravity="top"
@@ -40,27 +41,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
 
     <ImageButton
         android:id="@+id/btn_mensajes"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="99dp"
+        android:layout_width="31dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="296dp"
         android:background="@drawable/mensaje"
         android:contentDescription="MENSAJE"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toEndOf="@+id/btn_casa"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/mp3"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="30dp"
+        android:layout_height="28dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="200dp"
         android:background="@drawable/mp3"
@@ -69,21 +72,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,ImageContrastCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/btn_tienda"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="29dp"
+        android:layout_height="26dp"
         android:layout_marginTop="96dp"
         android:background="@drawable/tienda"
-        android:contentDescription="tienda"
+        android:contentDescription="@string/tienda"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toEndOf="@+id/mp3"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="NotSibling" />
+        tools:ignore="NotSibling,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/buscar"
@@ -93,7 +97,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.173"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <Button
         android:id="@+id/btn_registro"
@@ -108,7 +114,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintOverlap" />
 
     <ImageView
         android:id="@+id/imageButton"
@@ -120,7 +127,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
     <TextView
         android:id="@+id/textView12"
@@ -133,7 +142,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp,VisualLintOverlap" />
 
     <VideoView
         android:id="@+id/videoview"
@@ -153,12 +163,13 @@
         android:layout_marginTop="649dp"
         android:layout_marginBottom="34dp"
         android:backgroundTint="#FF401F"
-        android:text="cerrar sesión"
+        android:text="@string/cerrar_sesi_n"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
