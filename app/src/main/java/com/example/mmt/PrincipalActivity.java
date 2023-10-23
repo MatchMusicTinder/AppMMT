@@ -21,10 +21,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class PrincipalActivity extends AppCompatActivity{
+
+    private TextView textViewdatosPublicante;
     private static final String VIDEO_SAMPLE = "pantera";
 
     Button btn_exit;
@@ -38,6 +45,31 @@ public class PrincipalActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         mAuth = FirebaseAuth.getInstance();
+
+        textViewdatosPublicante = findViewById(R.id.datosPublicante);
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
+
+        String userId = user.getUid();
+
+        DocumentReference docRef = db.collection("user").document(userId);
+
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot.exists()) {
+                    // El documento existe, puedes obtener los datos del usuario
+                    String name = documentSnapshot.getString("name");
+                    // Muestra los datos del usuario en las TextView
+                    textViewdatosPublicante.setText("Nombre: " + name);
+                } else {
+                    // El documento no existe, maneja este caso según tus necesidades
+                }
+            }
+        });
 
 
         btn_exit = findViewById(R.id.btn_close);
