@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MMT"
         tools:targetApi="31">
         <activity
+            android:name=".ReproductorDeVideo"
+            android:exported="false" />
+        <activity
             android:name=".Perfil"
             android:exported="false" />
         <activity
