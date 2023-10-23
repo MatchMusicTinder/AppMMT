@@ -14,8 +14,8 @@ public class RegistroExitoso extends AppCompatActivity {
         setContentView(R.layout.activity_registro_exitoso);
     }
 
-    public void launchLoginActivity(View view) {
-        Intent intent = new Intent(RegistroExitoso.this, LoginActivity.class);
+    public void launchPrincipalActivity(View view) {
+        Intent intent = new Intent(this, PrincipalActivity.class);
         startActivity(intent);
     }
 }
