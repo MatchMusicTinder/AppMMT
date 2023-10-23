@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/degradado"
+    android:background="@drawable/reex"
     tools:context=".RegistroExitoso">
 
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="158dp"
         android:layout_height="58dp"
-        android:layout_marginTop="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="39dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toTopOf="@+id/textView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -20,9 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078"
         app:srcCompat="@drawable/logo_mm"
-        android:layout_gravity="center"
-        tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout"
-        android:contentDescription="TODO" />
+        tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/textView2"
@@ -240,6 +240,7 @@
         android:id="@+id/button"
         android:layout_width="309dp"
         android:layout_height="58dp"
+        android:layout_gravity="center"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
@@ -253,7 +254,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_gravity="center"
         app:layout_constraintVertical_bias="0.898"
         tools:ignore="HardcodedText" />
 
