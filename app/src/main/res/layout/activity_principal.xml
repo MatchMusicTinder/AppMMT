@@ -179,7 +179,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Juan Carlos 1/03/2023"
+        android:text=""
         android:textColor="#FBF9F9"
         android:textColorHighlight="#F8F5F5"
         android:textColorLink="#FBFAFA"
