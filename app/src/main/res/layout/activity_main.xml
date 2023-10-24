@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/degradado"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/acma"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,33 +14,34 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="¡Bienvenidos!"
+        android:text="@string/bienvenidos"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.042" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="398dp"
-        android:layout_height="128dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="&quot;La música es nuestro lenguaje común. Conéctate con amantes de la música, explora perfíles, comparte tus gustos musicales, descubre nuevos talentos y crea música nueva junto a otros con tu misma pasión por la música."
+        android:text="@string/La música es nuestro lenguaje común. Conéctate con amantes de la música, explora perfíles, comparte tus gustos musicales, descubre nuevos talentos y crea música nueva junto a otros con tu misma pasión por la música."
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231" />
+        app:layout_constraintVertical_bias="0.17" />
 
     <TextView
         android:id="@+id/textView2"
@@ -51,15 +52,15 @@
         android:layout_marginEnd="16dp"
         android:text="Match Music"
         android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textColor="#689F38"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.426"
+        tools:ignore="HardcodedText,TextContrastCheck" />
 
     <Button
         android:id="@+id/button"
@@ -70,15 +71,15 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/boton"
         android:onClick="launchLoginActivity"
-        android:text="Iniciar Sesion"
+        android:text="@string/iniciar_sesion"
         android:textColor="#000000"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.852" />
 
     <TextView
         android:id="@+id/textView4"
@@ -89,31 +90,35 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:contextClickable="true"
+        android:minHeight="48dp"
         android:onClick="launchRegisterActivity"
-        android:text="¿No tienes  cuenta? Regístrate AQUÍ"
+        android:text="@string/no_tienes_cuenta_reg_strate_aqu"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="18dp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.900" />
+        app:layout_constraintVertical_bias="0.965"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="255dp"
-        android:layout_height="152dp"
+        android:layout_width="243dp"
+        android:layout_height="132dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583"
-        app:srcCompat="@drawable/logo_mm" />
+        app:layout_constraintVertical_bias="0.684"
+        app:srcCompat="@drawable/logo_mm"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
