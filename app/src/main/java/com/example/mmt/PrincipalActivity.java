@@ -87,7 +87,10 @@ public class PrincipalActivity extends AppCompatActivity{
     }
 
 
-
+    public void perfil(View view) {
+        Intent intent = new Intent(this, PerfilActivity.class);
+        startActivity(intent);
+    }
 
 
     public void lauchReproducirvideo(View view) {
