@@ -51,9 +51,9 @@ public class LoginActivity extends AppCompatActivity {
                startActivity(new Intent(LoginActivity.this, PrincipalActivity.class));
                Toast.makeText(LoginActivity.this, "Bienvenido", Toast.LENGTH_SHORT).show();
            }else{
-               Toast.makeText(LoginActivity.this, "Error", Toast.LENGTH_SHORT).show();
+               Toast.makeText(LoginActivity.this, "Tu usuario NO esta registrado", Toast.LENGTH_SHORT).show();
            }
-       }).addOnFailureListener(e -> Toast.makeText(LoginActivity.this, "Error al inciar sesión", Toast.LENGTH_SHORT).show());
+       }).addOnFailureListener(e -> Toast.makeText(LoginActivity.this, "Debe Registrarse", Toast.LENGTH_SHORT).show());
     }
 
     @Override

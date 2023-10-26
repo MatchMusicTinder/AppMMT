@@ -171,6 +171,7 @@
         android:layout_margin="8dp"
         android:background="@drawable/usuario"
         android:backgroundTint="#59C846"
+        android:onClick="perfil"
         app:layout_constraintStart_toStartOf="@+id/svPublicacion"
         app:layout_constraintTop_toTopOf="@+id/svPublicacion" />
 
