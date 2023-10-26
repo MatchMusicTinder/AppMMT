@@ -1,10 +1,15 @@
 package com.example.mmt;
 
+
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -56,7 +61,6 @@ public class PerfilActivity extends AppCompatActivity {
         DocumentReference docRef = db.collection("user").document(userId);
 
 
-
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -95,40 +99,73 @@ public class PerfilActivity extends AppCompatActivity {
         floatingActionButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Elimina el perfil de Firebase Authentication
 
-                currentUser.delete()
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    // Elimina el perfil de Firestore
-                                    db.collection("user").document(currentUser.getUid())
-                                            .delete()
-                                            .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                @Override
-                                                public void onSuccess(Void aVoid) {
-                                                    mAuth.signOut();
-                                                    finish();
-                                                    startActivity(new Intent(PerfilActivity.this, MainActivity.class));
-                                                    // Perfil eliminado con éxito
-                                                    // Puedes redirigir al usuario a la pantalla de inicio o mostrar un mensaje de éxito.
-                                                }
-                                            })
-                                            .addOnFailureListener(new OnFailureListener() {
-                                                @Override
-                                                public void onFailure(@NonNull Exception e) {
-                                                    // Error al eliminar el perfil de Firestore
-                                                }
-                                            });
-                                } else {
-                                    // Error al eliminar el perfil de Firebase Authentication
-                                }
-                            }
-                        });
-
-                            }
-                        });
+                mostrarDialogo();
             }
+        });
+    }
+
+
+
+        private void mostrarDialogo () {
+
+            FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+            FirebaseAuth mAuth = FirebaseAuth.getInstance();
+            FirebaseUser user = mAuth.getCurrentUser();
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+
+
+            new AlertDialog.Builder(this)
+                    .setTitle("Eliminar Perfil")
+                    .setMessage("¿estas seguro deseas eliminar tu cuenta?")
+                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            currentUser.delete()
+                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+
+                                            if (task.isSuccessful()) {
+
+
+                                                db.collection("user").document(currentUser.getUid())
+                                                        .delete()
+                                                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                            @Override
+                                                            public void onSuccess(Void aVoid) {
+
+                                                                mAuth.signOut();
+                                                                finish();
+                                                                startActivity(new Intent(PerfilActivity.this, MainActivity.class));
+
+
+                                                            }
+                                                        })
+                                                        .addOnFailureListener(new OnFailureListener() {
+                                                            @Override
+                                                            public void onFailure(@NonNull Exception e) {
+
+                                                            }
+                                                        });
+                                            } else {
+                                                // Error al eliminar el perfil de Firebase Authentication
+                                            }
+                                        }
+                                    });
+                        }
+
+
+                    })
+                    .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Log.d("Mensaje", "Se cancelo la acción");
+                        }
+                    })
+                    .show();
         }
+
+}
 
