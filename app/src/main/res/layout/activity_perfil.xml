@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078"
         app:srcCompat="@drawable/logo_mm"
-        tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout" />
+        tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView2"
@@ -54,7 +54,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.26"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
 
 
     <TextView
@@ -174,7 +175,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo_mm" />
+        app:srcCompat="@drawable/logo_mm"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -191,7 +193,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.928"
-        app:srcCompat="@drawable/car_ui_icon_edit" />
+        app:srcCompat="@drawable/car_ui_icon_edit"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
@@ -208,7 +211,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.928"
-        app:srcCompat="@drawable/car_ui_icon_delete" />
+        app:srcCompat="@drawable/car_ui_icon_delete"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
