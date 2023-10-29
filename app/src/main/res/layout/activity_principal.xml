@@ -52,6 +52,7 @@
         android:background="@drawable/mensaje"
         android:contentDescription="MENSAJE"
         android:importantForAccessibility="no"
+        android:onClick="launchPublicacionSimple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toEndOf="@+id/btn_casa"
@@ -66,6 +67,7 @@
         android:background="@drawable/mp3icon"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
+        android:onClick="launchPublicacionAudio"
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
         app:layout_constraintTop_toTopOf="parent" />
 
