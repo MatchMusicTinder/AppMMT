@@ -101,15 +101,17 @@
         tools:ignore="NotSibling" />
 
     <Button
-        android:id="@+id/btn_registro"
+        android:id="@+id/publicar"
         android:layout_width="117dp"
         android:layout_height="42dp"
         android:layout_marginStart="46dp"
         android:layout_marginTop="148dp"
         android:backgroundTint="@color/material_dynamic_neutral40"
+        android:onClick="ir_a_publicar"
         android:text="@string/publicar"
         android:textColor="#010400"
         android:textSize="16sp"
+
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/etCriterioDeBusqueda"
         app:layout_constraintTop_toTopOf="parent" />
