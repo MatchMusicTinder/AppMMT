@@ -1,9 +1,9 @@
 package com.example.mmt;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -32,17 +32,19 @@ import java.util.List;
 public class PrincipalActivity extends AppCompatActivity{
 
     private TextView textViewdatosPublicante;
+    Button btn_exit;
     private static final String VIDEO_SAMPLE = "pantera";
 
-    Button btn_exit;
     FirebaseAuth mAuth;
 
     SearchView search_view;
     RecyclerView recyclerView;
-    ArrayAdapter<Object> adapter;
+    private UserAdapter adapter;
+    private List<User> resultsList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         mAuth = FirebaseAuth.getInstance();
@@ -50,26 +52,26 @@ public class PrincipalActivity extends AppCompatActivity{
         textViewdatosPublicante = findViewById(R.id.datosPublicante);
         search_view = findViewById(R.id.serach);
 
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
 
-        RecyclerViewAdapter adapter;
-
-        adapter = new RecyclerViewAdapter(this, resultsList); // Pasar el contexto y la lista
+        adapter = new UserAdapter(this, resultsList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
-        
         FirebaseFirestore db = FirebaseFirestore.getInstance();
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
-        FirebaseUser user = mAuth.getCurrentUser();
+        //FirebaseUser user = mAuth.getCurrentUser();
 
+        assert user != null;
         String userId = user.getUid();
 
         DocumentReference docRef = db.collection("user").document(userId);
 
-        search_view();
+        searchView();
         docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if (documentSnapshot.exists()) {
@@ -83,7 +85,6 @@ public class PrincipalActivity extends AppCompatActivity{
             }
         });
 
-
         btn_exit = findViewById(R.id.btn_close);
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,12 +96,12 @@ public class PrincipalActivity extends AppCompatActivity{
         });
     }
 
-    private void search_view() {
+    private void searchView() {
         search_view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 textSearch(query);
-                recyclerView.setVisibility(View.VISIBLE);
+                //recyclerView.setVisibility(View.VISIBLE);
                 return true;
             }
 
@@ -111,27 +112,21 @@ public class PrincipalActivity extends AppCompatActivity{
             }
         });
     }
-    List<String> resultsList = new ArrayList<>();
 
     private void textSearch(String query) {
         CollectionReference userCollection = FirebaseFirestore.getInstance().collection("user");
-        Query userQuery;
 
-        userQuery = userCollection.whereArrayContains("name", query);
+        Query userQuery = userCollection.whereEqualTo("name", query);
+
         userQuery.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                resultsList.clear();
                 for (QueryDocumentSnapshot document : queryDocumentSnapshots){
-                    String name = document.getString("name");
-                    resultsList.add(name);
+                    User user = document.toObject(User.class);
+                    resultsList.add(user);
                 }
-
-                /*if (resultsList.isEmpty()) {
-
-                    recyclerView.setBackgroundColor(getResources().getColor(R.color.verde));
-                } else {
-                    recyclerView.setBackgroundColor(getResources().getColor(R.color.verde));
-                }*/
 
                 adapter.notifyDataSetChanged();
 
@@ -152,6 +147,8 @@ public class PrincipalActivity extends AppCompatActivity{
         Intent intent = new Intent(this, ReproductorDeVideo.class);
         startActivity(intent);
     }
-
-
+    public void launchSecondActivity(View view) {
+        Intent intent = new Intent(this, TiendaActivity.class);
+        startActivity(intent);
+    }
 }

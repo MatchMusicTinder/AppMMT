@@ -29,7 +29,7 @@
     <string name="fecha_de_nacimiento" translatable="false">Fecha de Nacimiento</string>
     <string name="genero_musical_favorito" translatable="false">Genero Musical Favorito</string>
     <string name="nombre" translatable="false">nombre</string>
-
+    <string name="botonTienda">BtnTienda</string>
 
 
 </resources>
