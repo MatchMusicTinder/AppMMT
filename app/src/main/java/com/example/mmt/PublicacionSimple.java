@@ -18,13 +18,14 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class PublicacionSimple extends AppCompatActivity {
 
     Button btn_publicar;
-    EditText title,creationDate,genere,location,content;
+    EditText title,genere,location,content;
     FirebaseFirestore mFirestore;
     FirebaseAuth mAuth;
 
@@ -36,7 +37,6 @@ public class PublicacionSimple extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         title = findViewById(R.id.title);
-        creationDate = findViewById(R.id.creationDate);
         genere = findViewById(R.id.genere);
         location = findViewById(R.id.location);
         content = findViewById(R.id.content);
@@ -61,15 +61,17 @@ public class PublicacionSimple extends AppCompatActivity {
         Log.d("PublicacionSimple.java", "publicar - map: "+map.toString());
 
         title = findViewById(R.id.title);
-        creationDate = findViewById(R.id.creationDate);
         genere = findViewById(R.id.genere);
         location = findViewById(R.id.location);
         content = findViewById(R.id.content);
+
+        Date currentDate = new Date();
+
         Log.d("PublicacionSimple.java", "publicar - map: "+map.toString());
 
 
         map.put("title", title.getText().toString().trim());
-        map.put("creationDate", creationDate.getText().toString().trim());
+        map.put("creationDate", currentDate);
         map.put("genere", genere.getText().toString().trim());
         map.put("location", location.getText().toString().trim());
         map.put("content", content.getText().toString().trim());
