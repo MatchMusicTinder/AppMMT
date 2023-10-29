@@ -72,6 +72,10 @@ public class PrincipalActivity extends AppCompatActivity{
 
 
     }
+    public void ir_a_publicar(View view) {
+        Intent intent = new Intent(this, PosteoActivity.class);
+        startActivity(intent);
+    }
 
 
     public void perfil(View view) {
