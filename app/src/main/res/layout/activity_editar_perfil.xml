@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reex"
+    tools:context=".EditarPerfil">
+
+  <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="158dp"
+      android:layout_height="60dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="39dp"
+      android:contentDescription="TODO"
+      app:layout_constraintBottom_toTopOf="@+id/textView1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.505"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.078"
+      app:srcCompat="@drawable/logo_mm"
+      tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="@string/match_music"
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.191" />
+
+  <TextView
+      android:id="@+id/textView4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="Editar Perfil"
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.26"
+      tools:ignore="HardcodedText,VisualLintOverlap" />
+
+
+  <EditText
+      android:id="@+id/textView8"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="264dp"
+      android:layout_marginEnd="16dp"
+      android:text=""
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+
+  <EditText
+      android:id="@+id/textView9"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="340dp"
+      android:layout_marginEnd="16dp"
+      android:text=""
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+
+  <EditText
+      android:id="@+id/textView10"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="424dp"
+      android:layout_marginEnd="16dp"
+      android:text=""
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+
+
+  <EditText
+      android:id="@+id/textView11"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="504dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="179dp"
+      android:text=""
+      android:textAlignment="center"
+      android:textColor="#ffffff"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+
+  <Button
+      android:id="@+id/guardarDatos"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="160dp"
+      android:layout_marginTop="596dp"
+      android:layout_marginEnd="80dp"
+      android:layout_marginBottom="87dp"
+      android:text="Guardar"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="1.0"
+      tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

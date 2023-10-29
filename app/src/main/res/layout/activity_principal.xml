@@ -4,22 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondomm"
+    android:background="@drawable/fondoprin"
     android:orientation="vertical"
     tools:context=".PrincipalActivity">
 
+
     <ImageButton
         android:id="@+id/btn_casa"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:background="@drawable/casa"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="355dp"
+        android:background="@drawable/casaicon"
         android:contentDescription="CASA"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/match_music"
@@ -38,118 +41,265 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        />
+        tools:ignore="RtlHardcoded,TextSizeCheck" />
+
 
     <ImageButton
         android:id="@+id/btn_mensajes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="99dp"
+        android:layout_width="34dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="296dp"
         android:background="@drawable/mensaje"
         android:contentDescription="MENSAJE"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toEndOf="@+id/btn_casa"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/mp3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="98dp"
-        android:layout_marginEnd="247dp"
-        android:background="@drawable/mp3"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/mp3icon"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+
+    <ImageButton
+        android:id="@+id/ibMisVideos"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/playicon"
+        android:contentDescription="MP3"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toEndOf="@+id/mp3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/btn_tienda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/tienda"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/tiendaicon"
         android:contentDescription="tienda"
         android:importantForAccessibility="no"
+        android:onClick="@string/botonTienda"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
-        app:layout_constraintStart_toEndOf="@+id/mp3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ibMisVideos"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="NotSibling" />
-
-    <SearchView
-        android:id="@+id/buscar"
-        android:layout_width="250dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="144dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.173"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="HardcodedText,NotSibling,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="95dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="132dp"
+        android:id="@+id/btn_registro"
+        android:layout_width="117dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="164dp"
         android:backgroundTint="@color/material_dynamic_neutral40"
         android:text="@string/publicar"
         android:textColor="#010400"
-        android:textSize="10sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.879"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/promocion" />
+        tools:ignore="TouchTargetSizeCheck" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="23dp"
-        android:layout_height="19dp"
-        android:layout_marginTop="176dp"
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="649dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="#248808"
+        android:text="cerrar sesión"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+
+    <ScrollView
+        android:id="@+id/svPublicacion"
+        android:layout_width="400dp"
+        android:layout_height="218dp"
+
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registro"
+        tools:ignore="SpeakableTextPresentCheck,TextSizeCheck">
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ibPerfilPublicante"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
         android:background="@drawable/usuario"
         android:backgroundTint="#59C846"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:onClick="perfil"
+        app:layout_constraintStart_toStartOf="@+id/svPublicacion"
+        app:layout_constraintTop_toTopOf="@+id/svPublicacion"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/datosPublicante"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:text="@string/nomusuario"
-        android:textColor="@color/white"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="8dp"
+        android:text=""
+        android:textColor="#FBF9F9"
+        android:textColorHighlight="#F8F5F5"
+        android:textColorLink="#FBFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/svVideoYComentario"
+        app:layout_constraintStart_toEndOf="@id/ibPerfilPublicante"
+        app:layout_constraintTop_toTopOf="@+id/svPublicacion" />
 
-    <VideoView
-        android:id="@+id/vdo"
-        android:layout_width="0dp"
-        android:layout_height="170dp"
+    <ScrollView
+        android:id="@+id/svVideoYComentario"
+        android:layout_width="380dp"
+        android:layout_height="150dp"
+
+        android:layout_margin="8dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/svPublicacion"
+        app:layout_constraintEnd_toEndOf="@+id/svPublicacion"
+        app:layout_constraintStart_toStartOf="@+id/svPublicacion"
+        app:layout_constraintTop_toBottomOf="@+id/ibPerfilPublicante"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/tvDescripcionVideo"
+        android:layout_width="144dp"
+        android:layout_height="137dp"
+        android:layout_margin="8dp"
+        android:background="#FBF6F6"
+        android:text=" asdf asd as fads fas df fw fe we fwe 23 r fsa df a f 24 w rsd fs dfs df sdf sdf "
+        app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"
+        app:layout_constraintEnd_toEndOf="@+id/svVideoYComentario"
+        app:layout_constraintStart_toEndOf="@+id/ibReproducirVideo"
+        app:layout_constraintTop_toTopOf="@+id/svVideoYComentario"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ibEstrellita"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/estrellaicon"
+        android:contentDescription="estrellita"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/svPublicacion"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500K"
+        android:textColor="#FBF9F9"
+        android:textColorHighlight="#F8F5F5"
+        android:textColorLink="#FBFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/svVideoYComentario"
+        app:layout_constraintEnd_toEndOf="@+id/svPublicacion"
+        app:layout_constraintStart_toEndOf="@+id/ibEstrellita"
+        app:layout_constraintTop_toTopOf="@+id/svPublicacion"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="1,7M"
+        android:textColor="#FBF9F9"
+        android:textColorHighlight="#F8F5F5"
+        android:textColorLink="#FBFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/svVideoYComentario"
+        app:layout_constraintEnd_toStartOf="@+id/ibEstrellita"
+        app:layout_constraintTop_toTopOf="@+id/svPublicacion"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/ibpersonasicon"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/personasicon"
+        android:contentDescription=""
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/svVideoYComentario"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/svPublicacion"
+        tools:ignore="ContentDescription,ImageContrastCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ibReproducirVideo"
+        android:layout_width="141dp"
+        android:layout_height="126dp"
+        android:layout_margin="8dp"
+        android:onClick="lauchReproducirvideo"
+        app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"
+        app:layout_constraintStart_toStartOf="@+id/svVideoYComentario"
+        app:layout_constraintTop_toTopOf="@+id/svVideoYComentario"
+        app:srcCompat="@drawable/reproducirvideo"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <SearchView
+        android:id="@+id/serach"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border_search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+        android:outlineSpotShadowColor="@color/white"
+        android:layout_width="409dp"
+        android:layout_height="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
