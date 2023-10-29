@@ -22,7 +22,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RegistroSegundoPasoActivity extends AppCompatActivity {
+public class RegistroSegundoPasoActivity {
     Button btn_register;
     EditText name, email, password,fecha_nac,genero_mus,ubic,instru;
     FirebaseFirestore mFirestore;

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class ReproductorDeVideo extends AppCompatActivity {
+public class ReproductorDeVideo {
     private static final String VIDEO_SAMPLE = "pantera";
     private VideoView mVideoView;
     @Override

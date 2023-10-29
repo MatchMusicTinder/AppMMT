@@ -4,7 +4,7 @@ public class User {
     private String name;
 
     public User() {
-        // Constructor vacío requerido para Firestore
+
     }
 
     public User(String name) {

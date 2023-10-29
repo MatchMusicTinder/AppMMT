@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
@@ -30,7 +32,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         User user = userList.get(position);
 
-        // Configura los elementos de la vista según los datos del usuario
+
         holder.userName.setText(user.getName());
     }
 
@@ -44,7 +46,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            userName = itemView.findViewById(R.id.resultados); // Asegúrate de que el ID coincida con tu diseño XML
+            userName = itemView.findViewById(R.id.resultados);
         }
     }
 }

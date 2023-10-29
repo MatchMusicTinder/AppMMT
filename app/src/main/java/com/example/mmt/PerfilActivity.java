@@ -24,7 +24,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class PerfilActivity extends AppCompatActivity {
+public class PerfilActivity {
 
     private TextView textViewtextView7;
     private TextView textViewtextView8;

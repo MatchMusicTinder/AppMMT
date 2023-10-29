@@ -6,7 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TiendaActivity extends AppCompatActivity {
+public class TiendaActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
