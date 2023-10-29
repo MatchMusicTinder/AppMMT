@@ -147,8 +147,10 @@ public class PrincipalActivity extends AppCompatActivity{
         Intent intent = new Intent(this, ReproductorDeVideo.class);
         startActivity(intent);
     }
-    public void launchSecondActivity(View view) {
+    public void BtnTienda(View view) {
         Intent intent = new Intent(this, TiendaActivity.class);
         startActivity(intent);
     }
+
+
 }

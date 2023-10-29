@@ -14,7 +14,7 @@
         android:layout_width="31dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="355dp"
         android:background="@drawable/casaicon"
         android:contentDescription="CASA"
@@ -48,7 +48,7 @@
         android:id="@+id/btn_mensajes"
         android:layout_width="34dp"
         android:layout_height="27dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="296dp"
         android:background="@drawable/mensaje"
         android:contentDescription="MENSAJE"
@@ -59,13 +59,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-
     <ImageButton
         android:id="@+id/mp3"
         android:layout_width="28dp"
         android:layout_height="29dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/mp3icon"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
@@ -75,12 +74,13 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
+
     <ImageButton
         android:id="@+id/ibMisVideos"
         android:layout_width="29dp"
         android:layout_height="28dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="95dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/playicon"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
@@ -90,13 +90,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-
     <ImageButton
         android:id="@+id/btn_tienda"
         android:layout_width="32dp"
         android:layout_height="27dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/tiendaicon"
         android:contentDescription="tienda"
         android:importantForAccessibility="no"
@@ -111,13 +110,15 @@
         android:id="@+id/btn_registro"
         android:layout_width="117dp"
         android:layout_height="42dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="164dp"
         android:backgroundTint="@color/material_dynamic_neutral40"
         android:text="@string/publicar"
         android:textColor="#010400"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -282,12 +283,12 @@
         android:layout_width="280dp"
         android:layout_height="30dp"
         android:background="@drawable/border_search"
-        app:layout_constraintBottom_toTopOf="@+id/svPublicacion"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.947" />
+        app:layout_constraintVertical_bias="0.209" />
 
     <androidx.recyclerview.widget.RecyclerView
 
