@@ -69,12 +69,12 @@
         android:background="@drawable/mp3icon"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
-<<<<<<< HEAD
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.004"
-=======
+
         android:onClick="launchPublicacionAudio"
->>>>>>> f41a5b8b9b002847b98d046e206760ae25c6bb8c
+
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
