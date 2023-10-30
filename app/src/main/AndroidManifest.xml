@@ -13,21 +13,23 @@
         android:theme="@style/Theme.MMT"
         tools:targetApi="31">
         <activity
-            android:name=".VideosActivity"
+            android:name=".PublicacionSimpleLista"
             android:exported="false" />
         <activity
-            android:name=".TiendaActivity"
+            android:name=".PosteoActivity"
             android:exported="false" />
         <activity
-            android:name=".Search"
+            android:name=".PublicacionSimple"
+            android:exported="false" />
+        <activity
+            android:name=".PublicacionAudio"
             android:exported="false" />
         <activity
             android:name=".EditarPerfil"
             android:exported="false" />
         <activity
             android:name=".PerfilActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustNothing" />
+            android:exported="false" />
         <activity
             android:name=".ReproductorDeVideo"
             android:exported="false" />
