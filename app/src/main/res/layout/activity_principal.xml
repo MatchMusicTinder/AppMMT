@@ -113,20 +113,28 @@
         tools:ignore="HardcodedText,NotSibling,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/btn_registro"
+        android:id="@+id/publicar"
         android:layout_width="117dp"
         android:layout_height="42dp"
         android:layout_marginTop="164dp"
         android:backgroundTint="@color/material_dynamic_neutral40"
+        android:onClick="ir_a_publicar"
         android:text="@string/publicar"
         android:textColor="#010400"
         android:textSize="16sp"
+
         android:textStyle="bold"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
+=======
+        app:layout_constraintStart_toEndOf="@+id/etCriterioDeBusqueda"
+        app:layout_constraintTop_toTopOf="parent" />
+
+>>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
 
     <Button
         android:id="@+id/btn_close"
@@ -134,15 +142,39 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="649dp"
         android:layout_marginBottom="34dp"
+<<<<<<< HEAD
         android:backgroundTint="#248808"
+=======
+        android:backgroundTint="@color/boton"
+        android:textColor="#000000"
+>>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
         android:text="cerrar sesión"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         tools:ignore="HardcodedText,VisualLintButtonSize" />
 
+=======
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etCriterioDeBusqueda"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="148dp"
+        android:hint="Buscar"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="text"
+        android:tooltipText="buscar...."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
 
     <ScrollView
         android:id="@+id/svPublicacion"

@@ -43,7 +43,7 @@ public class RegistroSegundoPasoActivity {
         instru = findViewById(R.id.instrumentos);
         email = findViewById(R.id.correo);
         password = findViewById(R.id.contrasena);
-        btn_register = findViewById(R.id.btn_registro);
+        btn_register = findViewById(R.id.publicar);
 
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override

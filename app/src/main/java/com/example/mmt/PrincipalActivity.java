@@ -95,6 +95,10 @@ public class PrincipalActivity extends AppCompatActivity{
             }
         });
     }
+    public void ir_a_publicar(View view) {
+        Intent intent = new Intent(this, PosteoActivity.class);
+        startActivity(intent);
+    }
 
     private void searchView() {
         search_view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -155,7 +159,7 @@ public class PrincipalActivity extends AppCompatActivity{
 
 
     public void launchPublicacionSimple(View view) {
-        Intent intent = new Intent(this, PublicacionSimple.class);
+        Intent intent = new Intent(this, PublicacionSimpleLista.class);
         startActivity(intent);
     }
 

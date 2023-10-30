@@ -11,6 +11,7 @@
       <option name="m_reportEmptyBlocks" value="true" />
     </inspection_tool>
     <inspection_tool class="NavigationFile" enabled="false" level="ERROR" enabled_by_default="false" />
+<<<<<<< HEAD
     <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false" checkParameterExcludingHierarchy="false">
       <option name="LOCAL_VARIABLE" value="true" />
       <option name="FIELD" value="true" />
@@ -23,5 +24,8 @@
       <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
       <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
     </inspection_tool>
+=======
+    <inspection_tool class="UNUSED_IMPORT" enabled="true" level="INFORMATION" enabled_by_default="true" />
+>>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
   </profile>
 </component>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
@@ -120,4 +121,70 @@
         </application>
 
     >>>>>>> f41a5b8b9b002847b98d046e206760ae25c6bb8c!-->
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Match Music"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MMT"
+        tools:targetApi="31">
+        <activity
+            android:name=".PublicacionSimpleLista"
+            android:exported="false" />
+        <activity
+            android:name=".PosteoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PublicacionSimple"
+            android:exported="false" />
+        <activity
+            android:name=".PublicacionAudio"
+            android:exported="false" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReproductorDeVideo"
+            android:exported="false" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false" />
+        <activity
+            android:name=".PrincipalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroExitoso"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroSegundoPasoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+>>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
 </manifest>
