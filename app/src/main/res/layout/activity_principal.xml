@@ -100,11 +100,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="NotSibling" />
 
+
     <Button
         android:id="@+id/publicar"
         android:layout_width="117dp"
         android:layout_height="42dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="144dp"
         android:backgroundTint="@color/material_dynamic_neutral40"
         android:onClick="ir_a_publicar"
         android:text="@string/publicar"
@@ -113,8 +114,7 @@
 
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="274dp" />
-
+        tools:layout_editor_absoluteX="291dp" />
 
     <Button
         android:id="@+id/btn_close"
