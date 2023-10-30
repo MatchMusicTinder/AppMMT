@@ -169,9 +169,6 @@ public class PrincipalActivity extends AppCompatActivity{
     }
 
 
-    public void miVideos(View view) {
-        Intent intent = new Intent(this, VideosActivity.class);
-        startActivity(intent);
-    }
+
 
 }
