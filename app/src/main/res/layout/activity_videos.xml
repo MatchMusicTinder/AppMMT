@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tienda"
-    tools:context=".TiendaActivity">
+    android:background="@drawable/mivideos"
+    tools:context=".VideosActivity">
 
     <TextView
         android:id="@+id/match_music"
@@ -23,6 +23,7 @@
         app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         tools:ignore="RtlHardcoded,TextSizeCheck" />
 
     <ImageButton
@@ -30,11 +31,11 @@
         android:layout_width="31dp"
         android:layout_height="29dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="355dp"
         android:background="@drawable/casaicon"
+        android:onClick="miVideos"
         android:contentDescription="CASA"
-        android:onClick="casaicon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +46,13 @@
         android:id="@+id/btn_mensajes"
         android:layout_width="34dp"
         android:layout_height="27dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="296dp"
         android:background="@drawable/mensaje"
         android:contentDescription="MENSAJE"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintHorizontal_bias="0.735"
         app:layout_constraintStart_toEndOf="@+id/btn_casa"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
@@ -60,11 +61,13 @@
         android:id="@+id/mp3"
         android:layout_width="28dp"
         android:layout_height="29dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/mp3icon"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
@@ -74,11 +77,12 @@
         android:layout_width="29dp"
         android:layout_height="28dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/playicon"
-        android:onClick="BtnTienda"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toEndOf="@+id/mp3"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
@@ -87,60 +91,38 @@
         android:id="@+id/btn_tienda"
         android:layout_width="32dp"
         android:layout_height="27dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/tiendaicon"
         android:contentDescription="tienda"
         android:importantForAccessibility="no"
         android:onClick="@string/botonTienda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ibMisVideos"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,NotSibling,TouchTargetSizeCheck" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="19dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/lupaverde"
-        android:contentDescription="@string/buscador"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.344"
-        app:layout_constraintStart_toEndOf="@+id/btn_tienda"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
-
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="381dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="364dp"
+        android:id="@+id/imageView4"
+        android:layout_width="344dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="164dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.358"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bateria" />
+        app:srcCompat="@drawable/ares" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="385dp"
-        android:layout_height="192dp"
-        android:layout_marginBottom="108dp"
+        android:id="@+id/imageView5"
+        android:layout_width="362dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="388dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bajo" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="381dp"
-        android:layout_height="177dp"
-        android:layout_marginTop="176dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gitarra" />
+        app:srcCompat="@drawable/vigui" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

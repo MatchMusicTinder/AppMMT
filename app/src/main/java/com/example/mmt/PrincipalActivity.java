@@ -154,7 +154,6 @@ public class PrincipalActivity extends AppCompatActivity{
     }
 
 
-
     public void launchPublicacionSimple(View view) {
         Intent intent = new Intent(this, PublicacionSimple.class);
         startActivity(intent);
@@ -165,5 +164,10 @@ public class PrincipalActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
+
+    public void miVideos(View view) {
+        Intent intent = new Intent(this, VideosActivity.class);
+        startActivity(intent);
+    }
 
 }
