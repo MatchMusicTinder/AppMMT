@@ -6,14 +6,12 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-<<<<<<< HEAD
-public class ReproductorDeVideo {
-=======
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class ReproductorDeVideo extends AppCompatActivity {
->>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
+
     private static final String VIDEO_SAMPLE = "pantera";
     private VideoView mVideoView;
     @Override

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class LoginActivity {
+public class LoginActivity extends AppCompatActivity{
     Button btn_login, btn_register;
     EditText email, password;
     FirebaseAuth mAuth;

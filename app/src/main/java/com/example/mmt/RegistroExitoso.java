@@ -1,19 +1,13 @@
 package com.example.mmt;
 
-<<<<<<< HEAD
-import androidx.appcompat.app.AppCompatActivity;
-=======
->>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-<<<<<<< HEAD
-=======
 import androidx.appcompat.app.AppCompatActivity;
 
->>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -21,11 +15,8 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-<<<<<<< HEAD
-public class RegistroExitoso {
-=======
 public class RegistroExitoso extends AppCompatActivity {
->>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
+
 
     private TextView textViewtextView7;
     private TextView textViewtextView8;
