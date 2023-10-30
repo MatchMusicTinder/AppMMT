@@ -19,4 +19,9 @@ public class TiendaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PrincipalActivity.class);
         startActivity(intent);
     }
+
+    public void BtnTienda(View view) {
+        Intent intent = new Intent(this, VideosActivity.class);
+        startActivity(intent);
+    }
 }

@@ -30,7 +30,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         User user = userList.get(position);
 
-        // Configura los elementos de la vista según los datos del usuario
+
         holder.userName.setText(user.getName());
     }
 
@@ -44,7 +44,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            userName = itemView.findViewById(R.id.resultados); // Asegúrate de que el ID coincida con tu diseño XML
+            userName = itemView.findViewById(R.id.resultados);
         }
     }
 }
