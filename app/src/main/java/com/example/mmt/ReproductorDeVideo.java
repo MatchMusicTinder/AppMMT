@@ -9,9 +9,7 @@ import android.widget.VideoView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class ReproductorDeVideo extends AppCompatActivity {
-
     private static final String VIDEO_SAMPLE = "pantera";
     private VideoView mVideoView;
     @Override

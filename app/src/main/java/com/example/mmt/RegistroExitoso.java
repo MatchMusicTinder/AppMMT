@@ -1,6 +1,5 @@
 package com.example.mmt;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +15,6 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class RegistroExitoso extends AppCompatActivity {
-
 
     private TextView textViewtextView7;
     private TextView textViewtextView8;
