@@ -90,7 +90,7 @@ public class PrincipalActivity extends AppCompatActivity{
     }
 
     public void launchPublicacionSimple(View view) {
-        Intent intent = new Intent(this, PublicacionSimple.class);
+        Intent intent = new Intent(this, PublicacionSimpleLista.class);
         startActivity(intent);
     }
 
