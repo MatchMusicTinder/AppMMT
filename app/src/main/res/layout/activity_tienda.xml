@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tienda"
+    tools:context=".TiendaActivity">
+
+    <TextView
+        android:id="@+id/match_music"
+        android:layout_width="200dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:text="@string/match_music"
+        android:textColor="#59C846"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded,TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_casa"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="355dp"
+        android:background="@drawable/casaicon"
+        android:contentDescription="CASA"
+        android:onClick="almuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_mensajes"
+        android:layout_width="34dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="296dp"
+        android:background="@drawable/mensaje"
+        android:onClick="mensajes"
+        android:contentDescription="MENSAJE"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toEndOf="@+id/btn_casa"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/mp3"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/mp3icon"
+        android:contentDescription="MP3"
+        android:onClick="amp3"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/ibMisVideos"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/playicon"
+        android:onClick="Btnvideo"
+        android:contentDescription="MP3"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toEndOf="@+id/mp3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_tienda"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/tiendaicon"
+        android:contentDescription="tienda"
+        android:importantForAccessibility="no"
+        android:onClick="almuro"
+        app:layout_constraintStart_toEndOf="@+id/ibMisVideos"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,NotSibling,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/lupaverde"
+        android:contentDescription="@string/buscador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toEndOf="@+id/btn_tienda"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="381dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="364dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bateria" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="385dp"
+        android:layout_height="192dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bajo" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="381dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="176dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gitarra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

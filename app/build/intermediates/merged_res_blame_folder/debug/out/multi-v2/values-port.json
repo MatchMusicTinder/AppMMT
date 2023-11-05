@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mmt.app-mergeDebugResources-28:/values-port/values-port.xml",
+            "outputFile": "com.example.mmt.app-mergeDebugResources-40:/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/home/deo/.gradle/caches/transforms-3/4f2a9638cf34f10e94f31d07416b8a92/transformed/car-ui-lib-2.5.1/res/values-port/values.xml",
+                    "source": "/home/deo/.gradle/caches/transforms-3/9927a11759f3f9d4c3cbd06ef6889a03/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                },
+                {
+                    "source": "/home/deo/.gradle/caches/transforms-3/6602f04be6383fada5641256d0ed07b4/transformed/car-ui-lib-2.5.1/res/values-port/values.xml",
                     "from": {
                         "startLines": "4,7,8",
                         "startColumns": "0,0,0",
@@ -18,16 +28,6 @@
                         "startOffsets": "111,175,244",
                         "endColumns": "63,68,66",
                         "endOffsets": "170,239,306"
-                    }
-                },
-                {
-                    "source": "/home/deo/.gradle/caches/transforms-3/6c6ffd2b5c140a59a107fe5eaa0e19c4/transformed/appcompat-1.6.1/res/values-port/values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
                     }
                 }
             ]

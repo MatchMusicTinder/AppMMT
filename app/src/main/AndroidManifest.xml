@@ -13,13 +13,7 @@
         android:theme="@style/Theme.MMT"
         tools:targetApi="31">
         <activity
-            android:name=".PublicacionSimpleLista"
-            android:exported="false" />
-        <activity
-            android:name=".PosteoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PublicacionSimple"
+            android:name=".MensajesActivity"
             android:exported="false" />
         <activity
             android:name=".PublicacionAudio"
@@ -47,6 +41,12 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TiendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VideosActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"

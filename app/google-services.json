@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "974460950101",
-    "project_id": "match-music-a2c12",
-    "storage_bucket": "match-music-a2c12.appspot.com"
+    "project_number": "828440381326",
+    "firebase_url": "https://machmusictinder-default-rtdb.firebaseio.com",
+    "project_id": "machmusictinder",
+    "storage_bucket": "machmusictinder.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:974460950101:android:306d92291d87bcb68526dc",
+        "mobilesdk_app_id": "1:828440381326:android:03691b75f15b31ab40c6df",
         "android_client_info": {
           "package_name": "com.example.mmt"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDNaqgVoLGieh-Lb05JxFjZ7DSU898SRZ0"
+          "current_key": "AIzaSyCLR1Q89VwQZrZOdYNMSXxop5oDhwDCkbc"
         }
       ],
       "services": {
