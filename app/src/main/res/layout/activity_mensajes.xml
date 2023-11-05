@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondvid"
-    tools:context=".PublicacionAudio">
+    android:background="@drawable/fondmen"
+    tools:context=".MensajesActivity">
 
     <TextView
         android:id="@+id/match_music"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="355dp"
         android:background="@drawable/casaicon"
         android:contentDescription="CASA"
-        android:onClick="almuro"
+        android:onClick="miVideos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,6 @@
         android:layout_marginTop="115dp"
         android:layout_marginEnd="296dp"
         android:background="@drawable/mensaje"
-        android:onClick="mensajes"
         android:contentDescription="MENSAJE"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +104,5 @@
         app:layout_constraintStart_toEndOf="@+id/ibMisVideos"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,NotSibling,TouchTargetSizeCheck" />
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

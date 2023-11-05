@@ -30,7 +30,7 @@
         android:layout_gravity="center"
         android:text="@string/match_music"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

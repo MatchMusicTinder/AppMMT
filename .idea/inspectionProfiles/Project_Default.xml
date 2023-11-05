@@ -2,15 +2,10 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="AndroidDomInspection" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="AndroidElementNotAllowed" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="AndroidNonConstantResIdsInSwitch" enabled="false" level="ERROR" enabled_by_default="false" />
     <inspection_tool class="AndroidUnresolvableTag" enabled="false" level="ERROR" enabled_by_default="false" />
-    <inspection_tool class="CommentedOutCode" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="Convert2Lambda" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="EmptyStatementBody" enabled="false" level="WARNING" enabled_by_default="false">
-      <option name="m_reportEmptyBlocks" value="true" />
-    </inspection_tool>
     <inspection_tool class="NavigationFile" enabled="false" level="ERROR" enabled_by_default="false" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false" checkParameterExcludingHierarchy="false">
       <option name="LOCAL_VARIABLE" value="true" />
@@ -27,5 +22,8 @@
 =======
     <inspection_tool class="UNUSED_IMPORT" enabled="true" level="INFORMATION" enabled_by_default="true" />
 >>>>>>> 5b22c352ba11ed49852fe3cf5ecb4ef45c6963fd
+=======
+    <inspection_tool class="UNUSED_IMPORT" enabled="true" level="INFORMATION" enabled_by_default="true" />
+>>>>>>> Osvaldo-Diaz
   </profile>
 </component>

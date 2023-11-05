@@ -6,27 +6,26 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TiendaActivity extends AppCompatActivity{
+public class VideosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tienda);
-
-
+        setContentView(R.layout.activity_videos);
     }
 
-    public void almuro(View view) {
+
+    public void BtnTienda(View view) {
+        Intent intent = new Intent(this, TiendaActivity.class);
+        startActivity(intent);
+    }
+
+    public void miVideos(View view) {
         Intent intent = new Intent(this, PrincipalActivity.class);
         startActivity(intent);
     }
 
-    public void Btnvideo(View view) {
-        Intent intent = new Intent(this, VideosActivity.class);
-        startActivity(intent);
-    }
-
-    public void amp3(View view) {
+    public void mp3icon(View view) {
         Intent intent = new Intent(this, PublicacionAudio.class);
         startActivity(intent);
     }
@@ -36,3 +35,5 @@ public class TiendaActivity extends AppCompatActivity{
         startActivity(intent);
     }
 }
+
+

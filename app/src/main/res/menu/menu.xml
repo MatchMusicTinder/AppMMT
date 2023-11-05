@@ -4,15 +4,20 @@
 
     <item
         android:id="@+id/action_profile1"
-        android:title="Mi Perfil"
+        android:title="@string/action_profile1"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_profile2"
-        android:title="Perfil Banda" />
+        android:title="@string/action_profile2"
+        app:showAsAction="never"/>
     <item
         android:id="@+id/action_profile3"
-        android:title="Compartir" />
+        android:title="@string/action_profile3"
+        app:showAsAction="never"/>
     <item
         android:id="@+id/action_profile4"
-        android:title="Ajustes" />
+        android:title="@string/action_profile4" />
+    <item
+        android:id="@+id/action_profile5"
+        android:title="@string/action_profile5" />
 </menu>

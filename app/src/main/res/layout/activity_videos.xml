@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondvid"
-    tools:context=".PublicacionAudio">
+    android:background="@drawable/mivideos"
+    tools:context=".VideosActivity">
 
     <TextView
         android:id="@+id/match_music"
@@ -35,7 +35,7 @@
         android:layout_marginEnd="355dp"
         android:background="@drawable/casaicon"
         android:contentDescription="CASA"
-        android:onClick="almuro"
+        android:onClick="miVideos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,7 +82,6 @@
         android:layout_marginTop="115dp"
         android:background="@drawable/playicon"
         android:contentDescription="MP3"
-        android:onClick="videos"
         android:importantForAccessibility="no"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.021"
@@ -99,13 +98,33 @@
         android:background="@drawable/tiendaicon"
         android:contentDescription="tienda"
         android:importantForAccessibility="no"
-        android:onClick="tienda"
+        android:onClick="@string/botonTienda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.008"
         app:layout_constraintStart_toEndOf="@+id/ibMisVideos"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,NotSibling,TouchTargetSizeCheck" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="344dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ares" />
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="362dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="276dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vigui" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
