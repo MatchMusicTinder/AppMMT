@@ -14,12 +14,24 @@ public class VideosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_videos);
     }
 
+
+    public void BtnTienda(View view) {
+        Intent intent = new Intent(this, TiendaActivity.class);
+        startActivity(intent);
+    }
+
     public void miVideos(View view) {
         Intent intent = new Intent(this, PrincipalActivity.class);
         startActivity(intent);
     }
-    public void BtnTienda(View view) {
-        Intent intent = new Intent(this, TiendaActivity.class);
+
+    public void mp3icon(View view) {
+        Intent intent = new Intent(this, PublicacionAudio.class);
+        startActivity(intent);
+    }
+
+    public void mensajes(View view) {
+        Intent intent = new Intent(this, MensajesActivity.class);
         startActivity(intent);
     }
 }

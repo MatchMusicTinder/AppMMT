@@ -6,33 +6,31 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TiendaActivity extends AppCompatActivity {
+public class MensajesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tienda);
-
-
+        setContentView(R.layout.activity_mensajes);
     }
 
-    public void almuro(View view) {
-        Intent intent = new Intent(this, PrincipalActivity.class);
+    public void tienda(View view) {
+        Intent intent = new Intent(this, TiendaActivity.class);
         startActivity(intent);
     }
 
-    public void Btnvideo(View view) {
+    public void videos(View view) {
         Intent intent = new Intent(this, VideosActivity.class);
         startActivity(intent);
     }
 
-    public void amp3(View view) {
+    public void mp3icon(View view) {
         Intent intent = new Intent(this, PublicacionAudio.class);
         startActivity(intent);
     }
 
-    public void mensajes(View view) {
-        Intent intent = new Intent(this, MensajesActivity.class);
+    public void miVideos(View view) {
+        Intent intent = new Intent(this, PrincipalActivity.class);
         startActivity(intent);
     }
 }
