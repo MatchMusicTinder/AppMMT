@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078"
         app:srcCompat="@drawable/logo_mm"
-        tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout,ImageContrastCheck" />
+        tools:ignore="ContentDescription,HardcodedText,UnknownId,UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/textView2"
@@ -54,8 +54,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26"
-        tools:ignore="HardcodedText,VisualLintOverlap" />
+        app:layout_constraintVertical_bias="0.26" />
 
 
     <TextView
@@ -175,8 +174,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo_mm"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
+        app:srcCompat="@drawable/logo_mm" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -193,8 +191,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.928"
-        app:srcCompat="@drawable/car_ui_icon_edit"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/car_ui_icon_edit" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
@@ -211,8 +208,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.928"
-        app:srcCompat="@drawable/car_ui_icon_delete"
-        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/car_ui_icon_delete" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
