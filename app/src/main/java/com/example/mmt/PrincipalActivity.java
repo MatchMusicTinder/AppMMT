@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
-
-
 import android.widget.SearchView;
 import android.widget.TextView;
 
@@ -21,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.CollectionReference;
@@ -38,6 +36,7 @@ import java.util.List;
 public class PrincipalActivity extends AppCompatActivity{
 
     private TextView textViewdatosPublicante;
+
     Button btn_exit;
     FirebaseAuth mAuth;
     private SearchView searchView;
@@ -45,11 +44,13 @@ public class PrincipalActivity extends AppCompatActivity{
     private UserAdapter adapter;
     private final List<User> resultsList = new ArrayList<>();
     @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         mAuth = FirebaseAuth.getInstance();
+
 
         recyclerView = findViewById(R.id.recyclerView);
         textViewdatosPublicante = findViewById(R.id.datosPublicante);
@@ -60,8 +61,12 @@ public class PrincipalActivity extends AppCompatActivity{
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
 
+        textViewdatosPublicante = findViewById(R.id.datosPublicante);
+
+
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        //FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mAuth.getCurrentUser();
 
         searhView();
 
@@ -69,6 +74,7 @@ public class PrincipalActivity extends AppCompatActivity{
             String userId = user.getUid();
 
             DocumentReference docRef = db.collection("user").document(userId);
+
 
             docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -84,8 +90,10 @@ public class PrincipalActivity extends AppCompatActivity{
             }
         });
 
+
         }
         menu.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 PopupMenu popupMenu = new PopupMenu(PrincipalActivity.this, view);
@@ -119,6 +127,7 @@ public class PrincipalActivity extends AppCompatActivity{
             }
         });
 
+
     }
 
     public void searhView(){
@@ -142,11 +151,11 @@ public class PrincipalActivity extends AppCompatActivity{
         CollectionReference userCollection = FirebaseFirestore.getInstance().collection("user");
 
         Query userQuery = userCollection.whereEqualTo("name", query);
-        userQuery.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+        Task<QuerySnapshot> querySnapshotTask = userQuery.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override
             public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                 resultsList.clear();
-                for (QueryDocumentSnapshot document : queryDocumentSnapshots){
+                for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
                     User user = document.toObject(User.class);
                     resultsList.add(user);
                 }
@@ -166,23 +175,14 @@ public class PrincipalActivity extends AppCompatActivity{
         Intent intent = new Intent(this, PerfilActivity.class);
         startActivity(intent);
     }
-
     public void lauchReproducirvideo(View view) {
         Intent intent = new Intent(this, ReproductorDeVideo.class);
         startActivity(intent);
     }
-
-
-    public void BtnTienda(View view) {
-        Intent intent = new Intent(this, TiendaActivity.class);
-        startActivity(intent);
-    }
-
     public void launchPublicacionAudio(View view) {
         Intent intent = new Intent(this, PublicacionAudio.class);
         startActivity(intent);
     }
-
 
     public void botontienda(View view) {
         Intent intent = new Intent(this, TiendaActivity.class);
@@ -200,7 +200,6 @@ public class PrincipalActivity extends AppCompatActivity{
     }
 
 }
-
 
 
 

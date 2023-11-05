@@ -7,6 +7,7 @@
     <inspection_tool class="NavigationFile" enabled="false" level="ERROR" enabled_by_default="false" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false" checkParameterExcludingHierarchy="false">
       <option name="LOCAL_VARIABLE" value="true" />
       <option name="FIELD" value="true" />
@@ -25,5 +26,8 @@
 =======
     <inspection_tool class="UNUSED_IMPORT" enabled="true" level="INFORMATION" enabled_by_default="true" />
 >>>>>>> Osvaldo-Diaz
+=======
+    <inspection_tool class="UNUSED_IMPORT" enabled="true" level="INFORMATION" enabled_by_default="true" />
+>>>>>>> 5535a6856f151ec2a363cc0b7a4538fe33ae7510
   </profile>
 </component>

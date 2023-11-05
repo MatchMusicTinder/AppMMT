@@ -71,16 +71,7 @@
         android:background="@drawable/mp3icon"
         android:contentDescription="MP3"
         android:importantForAccessibility="no"
-
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
-
         android:onClick="launchPublicacionAudio"
-
-
-
-
         app:layout_constraintStart_toEndOf="@+id/btn_mensajes"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
@@ -126,20 +117,11 @@
         android:textSize="16sp"
 
         android:textStyle="bold"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.989"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TouchTargetSizeCheck" />
-
-
-
-
-
-
-
-
 
     <ScrollView
         android:id="@+id/svPublicacion"

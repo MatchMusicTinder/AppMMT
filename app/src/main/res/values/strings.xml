@@ -31,11 +31,12 @@
     <string name="nombre" translatable="false">nombre</string>
     <string name="botonTienda" tools:ignore="MissingTranslation">BtnTienda</string>
     <string name="buscador" translatable="false">Buscadr</string>
-    <string name="action_profile1">Mi Perfil</string>
-    <string name="action_profile2">Perfil Banda</string>
-    <string name="action_profile3">Compartir</string>
-    <string name="action_profile4">Ajustes</string>
-    <string name="action_profile5">Cerrar Sesion</string>
+    <string name="action_profile1" translatable="false">Mi Perfil</string>
+    <string name="action_profile2" translatable="false">Perfil Banda</string>
+    <string name="action_profile3" translatable="false">Compartir</string>
+    <string name="action_profile4" translatable="false">Ajustes</string>
+    <string name="action_profile5" translatable="false">Cerrar Sesion</string>
+
 
 
 </resources>

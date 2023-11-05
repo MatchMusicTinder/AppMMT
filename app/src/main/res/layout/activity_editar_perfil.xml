@@ -10,7 +10,7 @@
   <ImageView
       android:id="@+id/imageView1"
       android:layout_width="158dp"
-      android:layout_height="60dp"
+      android:layout_height="58dp"
       android:layout_gravity="center"
       android:layout_marginTop="39dp"
       android:contentDescription="TODO"
@@ -54,8 +54,7 @@
       app:layout_constraintHorizontal_bias="0.497"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.26"
-      tools:ignore="HardcodedText,VisualLintOverlap" />
+      app:layout_constraintVertical_bias="0.26" />
 
 
   <EditText
@@ -73,8 +72,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <EditText
       android:id="@+id/textView9"
@@ -91,8 +89,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <EditText
       android:id="@+id/textView10"
@@ -109,8 +106,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+      app:layout_constraintTop_toTopOf="parent" />
 
 
   <EditText
@@ -130,8 +126,23 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/imageView8"
+      android:layout_width="158dp"
+      android:layout_height="103dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextFields,VisualLintTextFieldSize" />
+      app:layout_constraintVertical_bias="0.0"
+      app:srcCompat="@drawable/logo_mm" />
 
   <Button
       android:id="@+id/guardarDatos"
@@ -147,7 +158,6 @@
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="1.0"
-      tools:ignore="HardcodedText" />
+      app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

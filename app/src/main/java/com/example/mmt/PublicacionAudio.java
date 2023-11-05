@@ -1,12 +1,10 @@
 package com.example.mmt;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 
 public class PublicacionAudio extends AppCompatActivity {
 
@@ -16,6 +14,7 @@ public class PublicacionAudio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_publicacion_audio);
     }
+
 
     public void videos(View view) {
         Intent intent = new Intent(this, VideosActivity.class);
@@ -37,4 +36,5 @@ public class PublicacionAudio extends AppCompatActivity {
         startActivity(intent);
     }
 }
+
 
