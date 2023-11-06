@@ -40,9 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.767"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageButton
@@ -111,11 +109,9 @@
         android:layout_height="42dp"
         android:layout_marginTop="155dp"
         android:backgroundTint="@color/material_dynamic_neutral40"
-
         android:text="@string/publicar"
         android:textColor="#010400"
         android:textSize="16sp"
-
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.989"
@@ -170,7 +166,6 @@
         android:id="@+id/svVideoYComentario"
         android:layout_width="380dp"
         android:layout_height="149dp"
-
         android:layout_margin="8dp"
         android:background="@drawable/border_search"
         app:layout_constraintBottom_toBottomOf="@id/svPublicacion"
@@ -193,8 +188,7 @@
         android:layout_margin="8dp"
         android:background="#00FBF6F6"
         android:text="
-        Pantera Is My Name.
-        El mejor video de todos los tiempos del Heavy Metal "
+        Pantera                      Is My Name. El mejor video de todos los tiempos del Heavy Metal "
         android:textColor="#D3EDD4"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="@id/svVideoYComentario"

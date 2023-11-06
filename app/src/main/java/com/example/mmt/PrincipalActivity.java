@@ -105,7 +105,7 @@ public class PrincipalActivity extends AppCompatActivity{
                                 return true;
                             case R.id.action_profile5:  //Cerrar Sesion
                                 FirebaseAuth.getInstance().signOut();
-                                Intent intent = new Intent(PrincipalActivity.this, LoginActivity.class);
+                                Intent intent = new Intent(PrincipalActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 finish();
                                 return true;
